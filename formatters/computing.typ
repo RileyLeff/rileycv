@@ -15,25 +15,36 @@
 
     // Examples list (if present), indented further
     if "examples" in lang_entry and lang_entry.examples.len() > 0 {
-      list(
-        marker: sym.bullet,
-        tight: true, // Adjust list item spacing if needed
-        // Map each example dictionary to formatted content
-        ..lang_entry.examples.map(ex => {
-          let example_text = ex.at("text", default: "")
-          let example_link = ex.at("link", default: none)
+      // Use pad() for indentation, NOT .inset()
+      pad(left: 2.5em, { // Adjust indent as needed
+        // Generate the list inside the pad's content block
+        list(
+          marker: sym.bullet,
+          tight: true, // Adjust list item spacing if needed
+          // Map each example dictionary to formatted content
+          ..lang_entry.examples.map(ex => {
+            let example_text = ex.at("text", default: "")
+            let example_link = ex.at("link", default: none)
 
-          // If a link exists, make the text the link
-          if example_link != none and example_link != "optional-link-to-repo-or-blog-post" and example_link != "optional-link-to-game-or-repo" { // Check for placeholder links
-            link(example_link)[#example_text]
-          } else {
-            // Otherwise, just display the text
-            example_text
-          }
-        })
-      ).inset(left: 2.5em) // Indent the whole list relative to the start of the block
-    }
-  })
+            // CORRECTED: Check for valid, non-placeholder links (wrapped in parentheses)
+            let is_valid_link = (
+                example_link != none and
+                example_link != "optional-link-to-repo-or-blog-post" and
+                example_link != "optional-link-to-game-or-repo"
+            )
+
+            // If a valid link exists, make the text the link
+            if is_valid_link {
+              link(example_link)[#example_text]
+            } else {
+              // Otherwise, just display the text
+              example_text
+            }
+          }) // End map()
+        ) // End list()
+      }) // End pad()
+    } // End if examples exist
+  }) // End block() for the language entry
 }
 
 
@@ -42,9 +53,9 @@
 
   // --- Favorite Languages Section ---
   if "favorite_languages" in data and data.favorite_languages.len() > 0 {
-    // Optional Subheading for clarity
-    // heading(level: 2)[Favorite Languages] // Use lower-level heading if desired
-    // v(0.3em)
+    // Optional Subheading
+    // text(weight: "bold", size: 12pt)[Core Languages]
+    // v(0.5em)
 
     // Loop through favorite languages and apply the helper function
     for lang_entry in data.favorite_languages {
