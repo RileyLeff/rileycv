@@ -1,0 +1,79 @@
+# data/mentorship.toml
+
+[[entry]]
+student_name = "Sehrin Hossain"
+level = "Undergraduate" # Assumed, confirm
+affiliation = "George Washington University" # Placeholder
+start_year = "2025" # Placeholder
+project_description = "Automated image segementation pipeline to analyze wood traits" # Placeholder
+outcome = "Won Luther Rice Fellowship." # Optional
+
+[[entry]]
+student_name = "Kaeden Rippon"
+level = "Undergraduate" # Inferred
+affiliation = "University Of Viriginia" # Inferred
+start_year = "2024" # Placeholder
+project_description = "Detected foliar water uptake in pine saplings." # Placeholder
+outcome = "Won VCR LTER REU Funding." # Optional
+
+[[entry]]
+student_name = "Ellyn Kinkel"
+level = "Undergraduate" # Assumed, confirm
+affiliation = "George Washington University" # Placeholder
+start_year = "2024" # Placeholde
+project_description = "Analyzing non-structural carbohydrate storage in salt-stressed coastal forests." # Placeholder
+outcome = "Won Harlan Undergraduate Fellowship." # Optional
+
+[[entry]]
+student_name = "Noa Shapiro-Tamir"
+level = "REU Student" # Inferred
+affiliation = "Oberlin College" # Inferred
+start_year = "2023" # Placeholder
+project_description = "Measured leaf decomposition rates across a salinity gradient."
+outcome = "Won VCR LTER REU Funding."
+
+[[entry]]
+student_name = "Maggie Connolly"
+level = "Undergraduate"
+affiliation = "George Washington University"
+start_year = "2022"
+project_description = "Studying plant hydraulic responses to elevated salinity."
+outcome = "Won Harlan Undergraduate Fellowship."
+
+[[entry]]
+student_name = "Aaron Mendez"
+level = "High School Student"
+affiliation = "GWU School Without Walls"
+start_year = "2022"
+funding_award = "" # Optional
+project_description = "Analyzing non-structural carbohydrate levels in Phragmites Australis for AP Research project."
+outcome = "SUNY!" # Optional
+
+[[entry]]
+student_name = "Aidan Brown"
+level = "Undergraduate Researcher"
+affiliation = "George Washington University"
+start_year = "2022"
+end_year = "Present" # Or specific end year if applicable
+project_description = "Training deep learning model to detect and analyze tree canopy structures from drone images."
+outcome = "Won GWU Harlan Fellowship, Critical Zone Network Fellowship (2x), Accepted to GWU 5-Year BS/MS Program In Biology." # Optional
+
+[[entry]]
+student_name = "James Abend"
+level = "High School Student" # Placeholder
+affiliation = "Tri Cities, WA" # Placeholder
+start_year = "2019" # Placeholder
+end_year = "" # Optional
+funding_award = "" # Optional
+project_description = "[Describe Project]" # Placeholder
+outcome = "" # Optional
+
+[[entry]]
+student_name = "Dakota DeRoos"
+level = "High School Student" # Placeholder
+affiliation = "Tri Cities, WA" # Placeholder
+start_year = "2019" # Placeholder
+end_year = "" # Optional
+funding_award = "" # Optional
+project_description = "[Describe Project]" # Placeholder
+outcome = "" # Optional

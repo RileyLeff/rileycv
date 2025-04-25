@@ -78,6 +78,14 @@
     data_key: "entry", // Process each item in the 'entry' array
     formatter_file: "formatters/outreach.typ",
     is_list: true // Formatter handles one entry at a time
+  ),
+  ( // Mentorship Section - NEW ENTRY
+    title: "Mentorship",
+    data_file: "data/mentorship.toml",
+    data_format: "toml",
+    data_key: "entry", // Process each item in the 'entry' array
+    formatter_file: "formatters/mentorship.typ",
+    is_list: true // Formatter handles one entry at a time
   )
 )
 
