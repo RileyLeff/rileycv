@@ -1,58 +1,43 @@
 // formatters/publications.typ
-// Formats the entire publications and datasets section.
+// Formats the publications and datasets section.
 
-// Helper function to format a single paper or dataset entry
-#let format_publication_entry(entry, entry_type: "paper") = {
-  // Block for spacing below each entry
+// Helper function 'format_publication_entry' remains the same as the previous correct version
+#let format_publication_entry(entry, entry_type: "paper", item_number: none) = {
   block(below: 1.0em, {
-
-    // 1. Title (e.g., medium weight)
-    text(weight: "medium")[#entry.title]
+    text(weight: "bold")[
+      #if item_number != none {
+        str(item_number) + ". " + entry.title
+      } else {
+        entry.title
+      }
+    ]
     parbreak()
-
-    // 2. Authors (smaller font)
     text(size: 10pt)[#entry.authors]
     parbreak()
-
-    // 3. Journal/Venue (italicized) and Year
-    // Use .at() for safety in case journal/venue key is missing
     let venue_text = if entry_type == "paper" {
-      #emph(entry.at("journal", default: "[Unknown Journal]"))
-    } else { // "dataset"
-      i(entry.at("venue", default: "[Unknown Venue]"))
+      emph(entry.at("journal", default: "[Unknown Journal]"))
+    } else {
+      emph(entry.at("venue", default: "[Unknown Venue]"))
     }
     text(size: 10pt)[#venue_text, #entry.year]
-
-    // 4. Links (DOI and/or general link)
     let doi = entry.at("doi", default: none)
     let link_url = entry.at("link", default: none)
-    let has_doi = doi != none and doi != "" // Check for non-empty string too
+    let has_doi = doi != none and doi != ""
     let has_link = link_url != none and link_url != ""
-
-    // Only add link section if at least one link exists
     if has_doi or has_link {
-      // Add space before the links
       h(1em)
-
       if has_doi {
-        // Create DOI link
-        link("https://doi.org/" + doi, emph("[DOI]")) // Emphasize link text
-        // Add space between DOI and Link if both exist
+        link("https://doi.org/" + doi, emph("[DOI]"))
         if has_link { h(0.5em) }
       }
       if has_link {
-        // Avoid duplicate link if 'link' is just the DOI URL
         let is_doi_link = has_doi and link_url == "https://doi.org/" + doi
         if not is_doi_link {
-          link(link_url, emph("[Link]")) // Emphasize link text
+          link(link_url, emph("[Link]"))
         }
       }
-    } // end if has_doi or has_link
-
-    // Contribution note removed as requested earlier
-    // If you wanted to add it back, you would put it here, potentially after a parbreak()
-
-  }) // End block
+    }
+  })
 }
 
 
@@ -66,58 +51,61 @@
     let citation_count = s.at("citations", default: 0)
     let h_index_val = s.at("h_index", default: 0)
 
-    // Only display stats if there's something meaningful
+    // Only proceed if there's something meaningful
     if citation_count > 0 or h_index_val > 0 or scholar_link_url != none {
+
+      // ** Build the list of grid cells conditionally **
+      let stat_cells = () // Start with an empty array
+
+      // Add citation row if count > 0
+      if citation_count > 0 {
+        stat_cells.push(align(right)[Citations:]) // Cell 1: Label
+        stat_cells.push([#citation_count])       // Cell 2: Value
+      }
+
+      // Add h-index row if value > 0
+      if h_index_val > 0 {
+        stat_cells.push(align(right)[h-index:]) // Cell 3: Label
+        stat_cells.push([#h_index_val])        // Cell 4: Value
+      }
+
+      // Add profile link row if URL exists
+      if scholar_link_url != none {
+        stat_cells.push(align(right)[Profile:])       // Cell 5: Label
+        stat_cells.push(link(scholar_link_url)[Google Scholar]) // Cell 6: Link
+      }
+
+      // ** Call grid with the constructed cells using spread operator '..' **
       grid(
-        columns: (auto, 1fr), // Labels left, values/link right (aligned right within cell)
-        //align: baseline,
-        row-gutter: 0.2em, // Small space between stat lines if wrapped
-
-        // Citations
-        if citation_count > 0 { align(right)[Citations:] },
-        if citation_count > 0 { [#citation_count] },
-
-        // H-Index
-        if h_index_val > 0 { align(right)[h-index:] },
-        if h_index_val > 0 { [#h_index_val] },
-
-        // Scholar Link
-        if scholar_link_url != none { align(right)[Profile:] },
-        if scholar_link_url != none { link(scholar_link_url)[Google Scholar] },
+        columns: (auto, 1fr), // Labels left, values/link right
+        align: left,
+        row-gutter: 0.2em,
+        ..stat_cells // Spread the contents of the 'stat_cells' array here
       )
       v(1.2em) // Add space after the stats block
-    }
-  }
+    } // end if stats are meaningful
+  } // end if "stats" in data
 
 
-  // --- Papers Section ---
+  // --- Papers Section --- (remains the same)
   if "papers" in data and data.papers.len() > 0 {
-    // Use a level 2 heading for visual hierarchy within the section
     heading(level: 2)[Peer-Reviewed Publications]
-    v(0.5em) // Space below heading
-
-    // Loop through papers and apply the helper function
+    v(0.5em)
+    let paper_counter = 1
     for entry in data.papers {
-      format_publication_entry(entry, entry_type: "paper")
+      format_publication_entry(entry, entry_type: "paper", item_number: paper_counter)
+      paper_counter += 1
     }
-    // Space after the last paper, before the next heading (if datasets exist)
-    if "datasets" in data and data.datasets.len() > 0 {
-        v(0.8em)
-    }
+    if "datasets" in data and data.datasets.len() > 0 { v(0.8em) }
   }
 
-
-  // --- Datasets Section ---
+  // --- Datasets Section --- (remains the same)
   if "datasets" in data and data.datasets.len() > 0 {
-    // Use a level 2 heading
     heading(level: 2)[Published Datasets]
-    v(0.5em) // Space below heading
-
-    // Loop through datasets and apply the helper function
+    v(0.5em)
     for entry in data.datasets {
-      format_publication_entry(entry, entry_type: "dataset")
+      format_publication_entry(entry, entry_type: "dataset") // No item_number
     }
-    // No extra space needed at the very end
   }
 
 } // End main format function
