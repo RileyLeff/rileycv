@@ -1,0 +1,102 @@
+datasets = []
+
+[stats]
+scholar_link = "https://scholar.google.com/citations?user=h02IDTwAAAAJ&hl=en&oi=ao"
+citations = 202
+h_index = 8
+
+[[papers]]
+title = "Biogeochemistry of upland to wetland soils, sediments, and surface waters across Mid-Atlantic and Great Lakes coastal interfaces"
+authors = "Allison N. Myers-Pigg, Stephanie C. Pennington, Khadijah K. Homolka, Allison M. Lewis, Opal Otenburg, Kaizad F. Patel, Peter Regier, Madison Bowe, Maxim I. Boyanov, Nathan A. Conroy, Donnie J. Day, Cooper G. Norris, Edward J. O’Loughlin, Jesse Alan Roebuck, Lucie Stetten, Vanessa L. Bailey, Kenneth M. Kemner, Nicholas D. Ward,  EXCHANGE Consortium, Silver Alford, Michael P. Back, Andy Baldwin, Jade Bolinger, Jacob A. Cianci-Gaskill, Matthew J. Cooper, Alex Demeo, Kyle Derby, Derek Detweiler, Suzanne Devres-Zimmerman, Erin Eberhard, Keryn Gedan, LeeAnn Haaf, Erin Johnson, Aliya Khan, Matthew L. Kirwan, Payton Kittaka, Erika Koontz, Adam Langley, Riley Leff, Scott Lerberg, Sairah Y. Malkin, Amy M. Marcarelli, Steven E. McMurray, Tyler Messerschmidt, Taylor C. Michael, Holly A. Michael, Elizabeth C. Minor, Brian Moye, Thomas J. Mozdzer, Scott Neubauer, Andrea Pain, Michael Philben, Evan Phillips, Dannielle Pratt, Lauren Sage, Daniel Sandborn, Stacy Smith, Alexander Smith, Samina Soin-Voshell, Bongkeun Song, Amanda Sprague-Getsy, Kari St. Laurent, Lorie Staver, Alice Stearns, Rebecca Swerida, Ethan J. Theuerkauf, Katherine Tully, Rodrigo Vargas, Elizabeth Watson, and Coreen Weilminster"
+year = "2023"
+link = "https://www.nature.com/articles/s41597-023-02548-7"
+doi = "10.1038/s41597-023-02548-7"
+journal = "Scientific Data"
+
+[[papers]]
+title = "Coastal inundation regime moderates the short-term effects of sediment and soil additions on seawater oxygen and greenhouse gas dynamics: a microcosm experiment"
+authors = "Peter Regier, Nicholas D. Ward, Alex Izquierdo, Andrew H. Baldwin, Donnie Day, Julia McElhinny, Kaizad Patel, Rodrigo Vargas, Jianqiu Zheng,  Exchange Consortium, and Allison Myers-Pigg"
+year = "2023"
+link = "https://www.frontiersin.org/articles/10.3389/fmars.2023.1308590/full"
+doi = "10.3389/fmars.2023.1308590"
+journal = "Frontiers in Marine Science"
+
+[[papers]]
+title = "Draft Genome Sequences of Three Bacterial Species from Aquatic Habitats near Washington, DC"
+authors = "Riley T. Leff, Jonathan MacDougall, Christina Pavloudi, Lausanne Oliver, Kaitlynn Slattery, Guinevere Lissner, and Jimmy H. Saw"
+year = "2023"
+link = "https://journals.asm.org/doi/10.1128/mra.01319-22"
+doi = "10.1128/mra.01319-22"
+journal = "Microbiology Resource Announcements"
+
+[[papers]]
+title = "Severe declines in hydraulic capacity and associated carbon starvation drive mortality in seawater exposed Sitka-spruce (Picea sitchensis) trees"
+authors = "Wenzhi Wang, Peipei Zhang, Hongxia Zhang, Charlotte Grossiord, Stephanie C Pennington, Matthew J Norwood, Weibin Li, Alexandria L Pivovaroff, Laura Fernández-de-Uña, Riley Leff, Steven B Yabusaki, Scott Waichler, Vanessa L Bailey, Nicholas D Ward, and Nate G McDowell"
+year = "2022"
+link = "https://iopscience.iop.org/article/10.1088/2515-7620/ac5f7d"
+doi = "10.1088/2515-7620/ac5f7d"
+journal = "Environmental Research Communications"
+
+[[papers]]
+title = "Plant genetic effects on microbial hubs impact host fitness in repeated field trials"
+authors = "Benjamin Brachi, Daniele Filiault, Hannah Whitehurst, Paul Darme, Pierre Le Gars, Marine Le Mentec, Timothy C. Morton, Envel Kerdaffrec, Fernando Rabanal, Alison Anastasio, Mathew S. Box, Susan Duncan, Feng Huang, Riley Leff, Polina Novikova, Matthew Perisin, Takashi Tsuchimatsu, Roderick Woolley, Caroline Dean, Magnus Nordborg, Svante Holm, and Joy Bergelson"
+year = "2022"
+link = "https://pnas.org/doi/full/10.1073/pnas.2201285119"
+doi = "10.1073/pnas.2201285119"
+journal = "Proceedings of the National Academy of Sciences"
+
+[[papers]]
+title = "The influence of increasing atmospheric <span style=\"font-variant:small-caps;\"> CO <sub>2</sub> </span> , temperature, and vapor pressure deficit on seawater‐induced tree mortality"
+authors = "Weibin Li, Nate G. McDowell, Hongxia Zhang, Wenzhi Wang, D. Scott Mackay, Riley Leff, Peipei Zhang, Nicholas D. Ward, Matt Norwood, Steve Yabusaki, Allison N. Myers‐Pigg, Stephanie C. Pennington, Alexandria L. Pivovaroff, Scott Waichler, Chonggang Xu, Ben Bond‐Lamberty, and Vanessa L. Bailey"
+year = "2022"
+link = "https://onlinelibrary.wiley.com/doi/10.1111/nph.18275"
+doi = "10.1111/nph.18275"
+journal = "New Phytologist"
+
+[[papers]]
+title = "Declining carbohydrate content of Sitka-spruce treesdying from seawater exposure"
+authors = "Peipei Zhang, Nate G McDowell,  Xuhui Zhou, Wenzhi Wang, Riley T Leff, Alexandria L Pivovaroff, Hongxia Zhang, Pak S Chow, Nicholas D Ward, Julia Indivero, Steven B Yabusaki, Scott Waichler, and Vanessa L Bailey"
+year = "2021"
+link = "https://academic.oup.com/plphys/article/185/4/1682/6119353"
+doi = "10.1093/plphys/kiab002"
+journal = "Plant Physiology"
+
+[[papers]]
+title = "Hydraulic architecture explains species moisture dependency but not mortality rates across a tropical rainfall gradient"
+authors = "Alexandria L. Pivovaroff, Brett T. Wolfe, Nate McDowell, Bradley Christoffersen, Stuart Davies, L. Turin Dickman, Charlotte Grossiord, Riley T. Leff, Alistair Rogers, Shawn P. Serbin, S. Joseph Wright, Jin Wu, Chonggang Xu, and Jeffrey Q. Chambers"
+year = "2021"
+link = "https://onlinelibrary.wiley.com/doi/10.1111/btp.12964"
+doi = "10.1111/btp.12964"
+journal = "Biotropica"
+
+[[papers]]
+title = "Seawater exposure causes hydraulic damage in dying Sitka-spruce trees"
+authors = "Hongxia Zhang, Xinrong Li, Wenzhi Wang, Alexandria L. Pivovaroff, Weibin Li, Peipei Zhang, Nicholas D. Ward, Allison Myers-Pigg, Henry D. Adams, Riley Leff, Anzhi Wang, Fenghui Yuan, Jiabing Wu, Steve Yabusaki, Scott Waichler, Vanessa L. Bailey, Dexin Guan, and Nate G. McDowell"
+year = "2021"
+link = "https://academic.oup.com/plphys/article/187/2/873/6307737"
+doi = "10.1093/plphys/kiab295"
+journal = "Plant Physiology"
+
+[[papers]]
+title = "Changes in carbon and nitrogen metabolism during seawater-induced mortality of <i>Picea sitchensis</i> trees"
+authors = "Weibin Li, Hongxia Zhang, Wenzhi Wang, Peipei Zhang, Nicholas D Ward, Matt Norwood, Allison Myers-Pigg, Chuanyan Zhao, Riley Leff, Steve Yabusaki, Scott Waichler, Vanessa L Bailey, and Nate G McDowell"
+year = "2021"
+link = "https://academic.oup.com/treephys/article/41/12/2326/6278867"
+doi = "10.1093/treephys/tpab073"
+journal = "Tree Physiology"
+
+[[papers]]
+title = "Stability of tropical forest tree carbon‐water relations in a rainfall exclusion treatment through shifts in effective water uptake depth"
+authors = "Alexandria L. Pivovaroff, Nate G. McDowell, Tayana Barrozo Rodrigues, Tim Brodribb, Lucas A. Cernusak, Brendan Choat, Charlotte Grossiord, Yoko Ishida, Kolby J. Jardine, Susan Laurance, Riley Leff, Weibin Li, Michael Liddell, D. Scott Mackay, Heather Pacheco, Jennifer Peters, Israel J. Sampaio Filho, Daisy C. Souza, Wenzhi Wang, Peipei Zhang, and Jeff Chambers"
+year = "2021"
+link = "https://onlinelibrary.wiley.com/doi/10.1111/gcb.15869"
+doi = "10.1111/gcb.15869"
+journal = "Global Change Biology"
+
+[[papers]]
+title = "Tree growth, transpiration, and water-use efficiency between shoreline and upland red maple (Acer rubrum) trees in a coastal forest"
+authors = "Wenzhi Wang, Nate G. McDowell, Stephanie Pennington, Charlotte Grossiord, Riley T Leff, Aditi Sengupta, Nicholas D. Ward, Uğur Uzay Sezen, Roy Rich, J. Patrick Megonigal, James C. Stegen, Ben Bond-Lamberty, and Vanessa Bailey"
+year = "2020"
+link = "https://linkinghub.elsevier.com/retrieve/pii/S0168192320302653"
+doi = "10.1016/j.agrformet.2020.108163"
+journal = "Agricultural and Forest Meteorology"
