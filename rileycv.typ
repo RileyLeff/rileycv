@@ -61,13 +61,13 @@
 #grid(
   columns: (1fr, auto),
   column-gutter: 1em,
-  align: bottom,
+  align: (bottom, bottom),
   [
     #block[ 
       #grid(
         columns: (auto, auto),
         column-gutter: 1.0em,
-        align: center, 
+        align: bottom, 
         [
           #set text(weight: "bold", size: 24pt)
           Riley Leff

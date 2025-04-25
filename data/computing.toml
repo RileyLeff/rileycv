@@ -30,7 +30,7 @@ examples = [
 
 [[other_languages]]
 name = "JavaScript / TypeScript"
-description = "Mostly for frontend web development (e.g. Svelte) but occasionally useful in research/academic contexts."
+description = "Primarily used for frontend web development (e.g. Svelte) but occasionally useful in research/academic contexts."
 examples = [
   { text = "Developed an educational 3D multiplayer game to communicate plant physiology concepts to students. [Link]", link = "forestroyale.rileyleff.com" }, # Example Link
   { text = "RiLeaf.ijm: ImageJ macro automating leaf area quantification. [Link]", link = "https://gist.github.com/RileyLeff/0bd4062dcbe4a6e5aa39489a7edd9edc" }
@@ -40,5 +40,5 @@ examples = [
 name = "Typst"
 description = "To generate pretty and reproducible documents."
 examples = [
-  { text = "This CV! Check out this repo for an example of how to generate a CV from structured data and formatter components. [Link]", link = "https://github.com/rileyleff/rileycv" }
+  { text = "This CV! Follow the link for an example of how to generate a CV from structured data and formatter components. [Link]", link = "https://github.com/rileyleff/rileycv" }
 ]
