@@ -1,0 +1,51 @@
+# data/awards.toml
+
+[[entry]]
+name = "NSF Graduate Research Fellowship"
+organization = "National Science Foundation" # Added
+dates = "April 2023"
+
+[[entry]]
+name = "Harlan Graduate Research Fellowship"
+organization = "GWU Biology" # Assumed based on PhD context - CHANGE IF NEEDED
+dates = "April 2021, 2022, 2024"
+
+[[entry]]
+name = "Irish Endowment Fund"
+organization = "GWU Biology" # Assumed based on PhD context - CHANGE IF NEEDED
+dates = "April 2023, 2024"
+
+[[entry]]
+name = "Laboratory Mission Award Finalist"
+organization = "Pacific Northwest National Laboratory" # Added
+dates = "September 2020"
+
+[[entry]]
+name = "Research Honors"
+organization = "UChicago Biological Sciences" # Shortened for clarity
+dates = "June 2019"
+
+[[entry]]
+name = "Academic Honors"
+organization = "The University of Chicago" # Added
+dates = "June 2019"
+
+[[entry]]
+name = "Excellence in Teaching Award"
+organization = "UChicago Biological Sciences" # Shortened for clarity
+dates = "June 2018"
+
+[[entry]]
+name = "Ecology & Evolution Research Fellowship"
+organization = "UChicago Biological Sciences" # Shortened for clarity
+dates = "May 2018"
+
+[[entry]]
+name = "Dean’s List"
+organization = "The University of Chicago" # Added
+dates = "2016, 2017, 2018"
+
+[[entry]]
+name = "The University Scholarship"
+organization = "The University of Chicago"
+dates = "March 2015"

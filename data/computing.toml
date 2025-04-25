@@ -1,0 +1,49 @@
+# data/computing.toml
+
+# No top-level introduction needed if we structure it well below.
+
+[[favorite_languages]]
+name = "Rust"
+description = "Primary language for performance, memory safety, correctness, and systems-level tasks. Enjoy its strong typing and compile-time guarantees."
+examples = [
+  { text = "CLI utilities for enhancing LLM workflows via context injection." },
+  { text = "Library enforcing scientific invariants directly within Rust's type system (compile-time checks)." },
+  { text = "Asynchronous firmware for embedded environmental sensors.", link = "optional-link-to-repo-or-blog-post" }, # Example Link
+  { text = "High-performance biological model compute backends (native & WebAssembly)." },
+]
+
+[[favorite_languages]]
+name = "Python"
+description = "Go-to for rapid scripting, automation, data analysis, and visualization tasks."
+examples = [
+  { text = "Automated image processing pipelines for biological samples." },
+  { text = "Data manipulation and analysis workflows (Pandas, NumPy)." },
+  { text = "Quick development of utility scripts for research tasks." },
+]
+
+
+[[other_languages]]
+name = "R"
+description = "Used mainly for specific ecological modeling packages, ggplot2 visualization, and collaboration within the biological sciences."
+examples = [
+  { text = "Published package wrapping a stomatal optimization model (primarily for collaborative use)." },
+]
+
+[[other_languages]]
+name = "JavaScript / TypeScript"
+description = "Applied for frontend web development and specific research automation/visualization needs."
+examples = [
+  { text = "Developed an educational 3D multiplayer game visualizing plant physiology concepts (Three.js).", link = "optional-link-to-game-or-repo" }, # Example Link
+  { text = "Created ImageJ macro automating leaf area quantification." },
+]
+
+# List of other familiar technologies
+familiar_with_title = "Familiar With"
+familiar_with_list = [
+  "C++ (Embedded, performance extensions - now prefer Rust)",
+  "SQL (Data manipulation)",
+  "Java (Specific large-scale bioinformatics tools)",
+  "Swift (macOS/iOS GPU compute via Metal)",
+  "OpenCL",
+  "ArcGIS"
+]

@@ -1,0 +1,32 @@
+# education.toml
+
+[[entry]]
+degree = "PhD, Biological Sciences"
+institution = "George Washington University"
+location = "Washington, DC"
+years = "2021 – Present"
+details = [
+  "Research Interests: Plant Ecophysiology, Climate Change, Open Source Software, Acausal Models",
+  "Research Advisor: Dr. Keryn Gedan",
+]
+
+[[entry]]
+degree = "Research Associate"
+institution = "Pacific Northwest National Laboratory"
+location = "Chicago, IL"
+years = "2019 - 2021"
+details = [
+  "Studied Tree Mortality In Response To Drought And Sea Level Rise",
+  "Research Advisor: Dr. Nate McDowell"
+]
+
+[[entry]]
+degree = "BSc, Biological Sciences"
+institution = "University of Chicago"
+location = "Chicago, IL"
+years = "2015 – 2019"
+details = [
+  "Honors B.S. Thesis: Microbial Diversity and Function in the Phyllosphere",
+  "Research Advisor: Dr. Joy Bergelson"
+]
+
