@@ -70,6 +70,14 @@
     data_key: "entry", // We want to process each item in the 'entry' array
     formatter_file: "formatters/teaching.typ",
     is_list: true // The formatter handles one entry at a time
+  ),
+  ( // Outreach Section - NEW ENTRY
+    title: "Outreach & Engagement", // Slightly broader title
+    data_file: "data/outreach.toml",
+    data_format: "toml",
+    data_key: "entry", // Process each item in the 'entry' array
+    formatter_file: "formatters/outreach.typ",
+    is_list: true // Formatter handles one entry at a time
   )
 )
 

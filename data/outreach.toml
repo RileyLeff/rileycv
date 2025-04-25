@@ -7,6 +7,12 @@ date = "2024"
 details = "" # Optional details field
 
 [[entry]]
+title = "What Do The Trees Know?"
+event_or_description = "Activity at Virginia Coastal Reserve LTER 'Day In The Lab'" # Expanded event name
+date = "2024"
+details = ""
+
+[[entry]]
 title = "Trees As Strategists"
 event_or_description = "Presentation at GWU Earth Day Symposium" # Clarified type
 date = "2025"
@@ -19,14 +25,8 @@ date = "2025"
 details = ""
 
 [[entry]]
-title = "What Do The Trees Know?"
-event_or_description = "Activity at Virginia Coastal Reserve LTER 'Day In The Lab'" # Expanded event name
-date = "2024"
-details = ""
-
-[[entry]]
 title = "Forest Royale"
 event_or_description = "Online Educational Game" # Categorized the entry
-date = "Ongoing" # Or specify a launch year if preferred
+date = "2025" # Or specify a launch year if preferred
 details = "A 3D multiplayer plant physiology strategy game designed to teach students about complex tradeoffs in plant-environment interactions."
 link = "http://forestroyale.rileyleff.com" # Added link from computing section
