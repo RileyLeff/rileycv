@@ -46,7 +46,15 @@
     data_key: "entry",
     formatter_file: "formatters/awards.typ",
     is_list: true
-  )
+  ),
+  ( // Publications & Datasets - Make sure this is correct
+    title: "Publications & Datasets", // Main heading for the section
+    data_file: "data/publications.toml", // Points to the generated TOML
+    data_format: "toml",
+    data_key: none, // Formatter handles the whole object
+    formatter_file: "formatters/publications.typ", // Points to the new formatter
+    is_list: false // Process the whole file data at once
+  ),
 )
 
 // --- Data Loading Helper ---

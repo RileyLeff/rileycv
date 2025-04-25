@@ -6,8 +6,8 @@
 # ]
 # ///
 """
-Generates publications.toml from Zotero API using content='csljson'.
-Preserves the [stats] section if it exists.
+Generates publications.toml from Zotero API, fetching CSL JSON for items.
+Classifies 'article' type from CSL JSON as dataset. Preserves [stats].
 
 Setup/Usage: See previous versions.
 """
@@ -32,7 +32,7 @@ ZOTERO_COLLECTION_KEY = os.environ.get("ZOTERO_COLLECTION_KEY")
 GOOGLE_SCHOLAR_ID = os.environ.get("GOOGLE_SCHOLAR_ID", "YOUR_ID_HERE")
 
 def format_authors(authors_list):
-    # ... (same as before) ...
+    """Formats CSL JSON author list to 'First Last' style."""
     formatted_authors = []
     for author in authors_list:
         name = ""
@@ -48,7 +48,7 @@ def format_authors(authors_list):
     return ', '.join(formatted_authors[:-1]) + ', and ' + formatted_authors[-1]
 
 def get_year(issued_data):
-    # ... (same as before) ...
+    """Extracts year from CSL JSON 'issued' structure."""
     try:
         if 'date-parts' in issued_data and issued_data['date-parts'] and issued_data['date-parts'][0]:
             return str(issued_data['date-parts'][0][0])
@@ -61,8 +61,7 @@ def get_year(issued_data):
 
 # --- Main Execution Logic ---
 def main():
-    parser = argparse.ArgumentParser(description="Generate publications.toml from Zotero API (using content='csljson'), preserving stats.")
-    # ... (argparse setup unchanged) ...
+    parser = argparse.ArgumentParser(description="Generate publications.toml from Zotero API, preserving stats.")
     parser.add_argument("-o", "--output", type=Path, default=DEFAULT_OUTPUT_TOML_FILE, help=f"Output TOML (default: {DEFAULT_OUTPUT_TOML_FILE})")
     parser.add_argument("-c", "--collection", default=ZOTERO_COLLECTION_KEY, help="Zotero Collection Key")
     parser.add_argument("-u", "--user", default=ZOTERO_USER_ID, help="Zotero User ID")
@@ -96,44 +95,28 @@ def main():
     try:
         print(f"Connecting to Zotero API for user {user_id}, collection {collection_key}...")
         zot = zotero.Zotero(user_id, 'user', api_key)
-
-        # ** Use content='csljson' here **
-        # Pyzotero should parse this into a list of dicts automatically
         print(f"Fetching items from collection {collection_key} as CSL JSON...")
-        # Using zot.everything to handle potential pagination (limit > 100)
         csl_data = zot.everything(zot.collection_items(collection_key, itemType='-attachment', content='csljson', limit=None))
-        # Note: limit=None tells zot.everything to fetch all pages.
-
-        # Debugging check: See if we get dictionaries now
-        print(f"DEBUG: Retrieved {len(csl_data)} items from API.")
-        if csl_data and isinstance(csl_data[0], dict):
-            print("DEBUG: First item type:", type(csl_data[0]))
-            print("DEBUG: First item keys:", list(csl_data[0].keys())) # See if it has CSL keys
-        elif csl_data:
-             print("DEBUG: First item type:", type(csl_data[0])) # If not dict, what is it?
-             print("DEBUG: First item value:", repr(csl_data[0])[:200])
-
+        print(f"Retrieved {len(csl_data)} items from API.") # Simplified debug
         if not csl_data:
              print(f"Warning: No items found in collection '{collection_key}' or failed to fetch.", file=sys.stderr)
-
     except Exception as e:
         print(f"Error fetching data from Zotero API: {e}", file=sys.stderr)
-        print("Check credentials, collection key, and internet connection.", file=sys.stderr)
         sys.exit(1)
 
 
     papers = []
     datasets = []
-    print(f"Processing {len(csl_data)} items retrieved from API...")
+    print(f"Processing {len(csl_data)} items...")
     # --- Process Items ---
     for item in csl_data:
-        # Check if item is actually a dictionary before processing
         if not isinstance(item, dict):
             print(f"  Warning: Skipping item that is not a dictionary: {repr(item)[:100]}")
             continue
 
-        # --- Proceed with processing the CSL JSON dictionary 'item' ---
-        entry_type = item.get('type', 'article-journal').lower()
+        # Removed the debug print for item type
+        entry_type = item.get('type', 'MISSING_TYPE').lower()
+
         entry_data = {
             'title': item.get('title', 'Untitled'),
             'authors': format_authors(item.get('author', [])),
@@ -143,16 +126,21 @@ def main():
         }
 
         if not entry_data['authors'] or not entry_data['title'] or entry_data['title'] == 'Untitled':
-             print(f"  Skipping item due to missing title or authors: {item.get('id', 'N/A')}") # CSL uses 'id' not 'key'
+             print(f"  Skipping item due to missing title or authors: {item.get('id', 'N/A')}")
              continue
 
+        # --- Check against KNOWN paper types ---
         if entry_type in ['article-journal', 'paper-conference', 'chapter', 'report', 'thesis']:
             entry_data['journal'] = item.get('container-title', item.get('publisher', 'Unknown Journal/Venue'))
             papers.append({k: v for k, v in entry_data.items() if v is not None})
-        elif entry_type == 'dataset':
+        # --- ** FIXED Check against possible dataset types ** ---
+        elif entry_type in ['dataset', 'webpage', 'article']: # Added 'article' based on debug output
             entry_data['venue'] = item.get('publisher', item.get('archive', 'Unknown Repository'))
             datasets.append({k: v for k, v in entry_data.items() if v is not None})
-        # else: print(f"  Skipping item type '{entry_type}' - {entry_data['title'][:30]}...")
+        # --- Else block to log unclassified types ---
+        else:
+            # Log types that weren't classified
+            print(f"  INFO: Unclassified item type '{entry_type}' for title: '{entry_data['title'][:30]}...'")
 
 
     # --- Prepare Final TOML Structure (Unchanged) ---
@@ -167,7 +155,7 @@ def main():
         output_path.parent.mkdir(parents=True, exist_ok=True)
         print(f"Writing TOML output to: {output_path}")
         with output_path.open('wb') as f: tomli_w.dump(final_data, f)
-        print(f"Successfully generated '{output_path}' with {len(papers)} papers and {len(datasets)} datasets.")
+        print(f"Successfully generated '{output_path}' with {len(papers)} papers and {len(datasets)} datasets.") # This count should now be correct
         if existing_stats['citations'] > 0 or existing_stats['h_index'] > 0 : print("  Preserved existing [stats] section.")
         else: print("  Used default [stats] section (Update manually if needed).")
     except Exception as e: print(f"Error writing TOML file '{output_path}': {e}", file=sys.stderr); sys.exit(1)

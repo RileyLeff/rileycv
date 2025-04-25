@@ -1,5 +1,3 @@
-datasets = []
-
 [stats]
 scholar_link = "https://scholar.google.com/citations?user=h02IDTwAAAAJ&hl=en&oi=ao"
 citations = 202
@@ -46,7 +44,7 @@ doi = "10.1073/pnas.2201285119"
 journal = "Proceedings of the National Academy of Sciences"
 
 [[papers]]
-title = "The influence of increasing atmospheric <span style=\"font-variant:small-caps;\"> CO <sub>2</sub> </span> , temperature, and vapor pressure deficit on seawater‐induced tree mortality"
+title = "The influence of increasing atmospheric CO2, temperature, and vapor pressure deficit on seawater‐induced tree mortality"
 authors = "Weibin Li, Nate G. McDowell, Hongxia Zhang, Wenzhi Wang, D. Scott Mackay, Riley Leff, Peipei Zhang, Nicholas D. Ward, Matt Norwood, Steve Yabusaki, Allison N. Myers‐Pigg, Stephanie C. Pennington, Alexandria L. Pivovaroff, Scott Waichler, Chonggang Xu, Ben Bond‐Lamberty, and Vanessa L. Bailey"
 year = "2022"
 link = "https://onlinelibrary.wiley.com/doi/10.1111/nph.18275"
@@ -78,7 +76,7 @@ doi = "10.1093/plphys/kiab295"
 journal = "Plant Physiology"
 
 [[papers]]
-title = "Changes in carbon and nitrogen metabolism during seawater-induced mortality of <i>Picea sitchensis</i> trees"
+title = "Changes in carbon and nitrogen metabolism during seawater-induced mortality of Picea sitchensis trees"
 authors = "Weibin Li, Hongxia Zhang, Wenzhi Wang, Peipei Zhang, Nicholas D Ward, Matt Norwood, Allison Myers-Pigg, Chuanyan Zhao, Riley Leff, Steve Yabusaki, Scott Waichler, Vanessa L Bailey, and Nate G McDowell"
 year = "2021"
 link = "https://academic.oup.com/treephys/article/41/12/2326/6278867"
@@ -100,3 +98,27 @@ year = "2020"
 link = "https://linkinghub.elsevier.com/retrieve/pii/S0168192320302653"
 doi = "10.1016/j.agrformet.2020.108163"
 journal = "Agricultural and Forest Meteorology"
+
+[[datasets]]
+title = "EXCHANGE Campaign 1: A Community-Driven Baseline Characterization of Soils, Sediments, and Water Across Coastal Gradients"
+authors = "Stephanie C. Pennington, Silver Alford, Michael P. Back, Vanessa Bailey, Andy Baldwin, Jade Bolinger, Madison Bowe, Maxim I. Boyanov, Jacob A. Cianci-Gaskill, Nathan A. Conroy, Matthew J. Cooper, Donnie Day, Alex Demeo, Kyle Derby, Derek Detweiler, Suzanne Devres-Zimmerman, Erin Eberhard, Keryn Gedan, LeeAnn Haaf, Khadijah K. Homolka, Erin Johnson, Kenneth M. Kemner, Aliya Khan, Matthew Kirwan, Payton Kittaka, Erika Koontz, Adam Langley, Riley Leff, Scott Lerberg, Allison M. Lewis, Sairah Malkin, Amy M. Marcarelli, Steven E. McMurray, Tyler Messerschmidt, Taylor C. Michael, Holly A. Michael, Elizabeth C. Minor, Brian Moye, Thomas J. Mozdzer, Scott Neubauer, Cooper G. Norris, Edward J. O'Loughlin, Opal Otenburg, Andrea Pain, Kaizad F. Patel, Michael Philben, Evan Phillips, Dannielle Pratt, Peter Regier, Jesse Alan Roebuck Jr., Lauren Sage, Daniel Sandborn, Stacy Smith, Alex Smith, Samina Soin-Voshell, Bongkeun Song, Amanda Sprague-Getsy, Kari St. Laurent, Lorie Staver, Alice Stearns, Lucie Stetten, Rebecca Swerida, Ethan J. Theuerkauf, Katherine Tully, Rodrigo Vargas, Nicholas D. Ward, Elizabeth Watson, Coreen Weilminster, and Allison N. Myers-Pigg"
+year = "2023"
+link = "https://www.osti.gov/servlets/purl/1960313/"
+doi = "10.15485/1960313"
+venue = "Environmental System Science Data Infrastructure for a Virtual Ecosystem"
+
+[[datasets]]
+title = "Leaf gas exchange (BNL-PNNL collaboration), San Lorenzo, Panama, 2020"
+authors = "Julien Lamour, Kenneth Davidson, Kim Ely, Alexandria Pivovaroff, Nate McDowell, Riley Leff, Alistair Rogers, and Shawn Serbin"
+year = "2022"
+link = "https://www.osti.gov/servlets/purl/1897199/"
+doi = "10.15486/NGT/1897199"
+venue = "Next-Generation Ecosystem Experiments Tropics; Brookhaven National Laboratory; Pacific Northwest National Laboratory"
+
+[[datasets]]
+title = "Functional trait data for 11 canopy tree species in the control and drought treatments at AU-DRO (2018-2019)"
+authors = "Alexandria Pivovaroff, Nate McDowell, Tayana Barrozo, Timothy Brodribb, Lucas Cernusak, Charlotte Grossiord, Yoko Ishida, Kolby Jardine, Susan Laurance, Riley Leff, Weibin Li, Heather Pacheco, Israel Sampaio, Daisy Souza, Wenzhi Wang, and Peipei Zhang"
+year = "2021"
+link = "https://www.osti.gov/servlets/purl/1810164/"
+doi = "10.15486/NGT/1810164"
+venue = "Next-Generation Ecosystem Experiments Tropics; Pacific Northwest National Laboratory"
