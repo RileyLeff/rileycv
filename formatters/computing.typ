@@ -1,22 +1,31 @@
 // formatters/computing.typ
-// Formats the computing skills section with structured language categories.
+// Formats the computing skills section with structured language categories and indentation.
 
 // Helper function to format a single language entry (name, description, examples)
-// This remains the same as before.
 #let format_language_entry(lang_entry) = {
-  block(below: 0.8em, { // Space after each language block
+  // The outer block provides spacing below the entry, BUT NO PADDING HERE
+  block(below: 0.8em, {
     // Language Name (Sub-heading within the category)
     text(weight: "bold", size: 11pt)[#lang_entry.name]
 
-    // Description (if present), indented slightly
+    // ***** ADD EXPLICIT BREAK HERE *****
+    parbreak() // Or use '\ ' for a line break, or v(0.1em) for tiny space + break
+
+    // Description (if present) - will now start on the next line
     if "description" in lang_entry {
-      pad(left: 1.5em)[#text(size: 10pt)[#lang_entry.description]]
-      v(0.2em) // Space between description and examples
+      // The text will naturally follow the language name's indentation level
+      text(size: 10pt)[#lang_entry.description]
+      // Remove the v() here, as parbreak() adds space controlled by #set par(spacing: ...)
+      // v(0.2em)
     }
 
-    // Examples list (if present), indented further
+    // Examples list (if present) - ADJUSTED PADDING
     if "examples" in lang_entry and lang_entry.examples.len() > 0 {
-      pad(left: 2.5em, { // Indent the list
+      // Ensure spacing between description (or name if no desc) and list
+      v(0.3em) // Add space before the list starts
+
+      // Indent relative to the name/description baseline
+      pad(left: 1.0em, {
         list(
           marker: sym.bullet,
           tight: true,
@@ -31,7 +40,7 @@
             if is_valid_link { link(example_link)[#example_text] } else { example_text }
           }) // End map()
         ) // End list()
-      }) // End pad()
+      }) // End pad() for examples list
     } // End if examples exist
   }) // End block() for the language entry
 }
@@ -39,43 +48,28 @@
 
 // Main format function for the whole computing section data
 #let format(data) = {
-
+  // ... (rest of the main format function remains the same) ...
   // --- Favorite Languages Section ---
-  if "favorite_languages" in data and data.favorite_languages.len() > 0 {
-    // Top-level heading for this category
-    text(weight: "bold", size: 12pt)[Favorite Languages] // Use consistent heading style
-    v(0.5em) // Space below heading
-
-    // Loop through favorite languages and apply the helper function
-    for lang_entry in data.favorite_languages {
-      format_language_entry(lang_entry)
+  if "primary_languages" in data and data.primary_languages.len() > 0 {
+    text(weight: "bold", size: 12pt)[Primary Languages]
+    v(0.5em)
+    for lang_entry in data.primary_languages {
+      pad(left: 1.5em, { format_language_entry(lang_entry) })
     }
-    // Removed extra v() here, spacing is handled by the block in the helper
   }
-
   // --- Other Languages Section ---
   if "other_languages" in data and data.other_languages.len() > 0 {
-    // Top-level heading for this category
-    text(weight: "bold", size: 12pt)[Other Languages] // Use consistent heading style
-    v(0.5em) // Space below heading
-
-    // Loop through other languages and apply the helper function
+    text(weight: "bold", size: 12pt)[Other Languages]
+    v(0.5em)
     for lang_entry in data.other_languages {
-      format_language_entry(lang_entry)
+      pad(left: 1.5em, { format_language_entry(lang_entry) })
     }
-    // Removed extra v() here
   }
-
   // --- Familiar With Section ---
   if "familiar_with_list" in data and data.familiar_with_list.len() > 0 {
     let title = data.at("familiar_with_title", default: "Familiar With")
-    // Top-level heading for this category
-    text(weight: "bold", size: 12pt)[#title] // Use consistent heading style (size 12pt)
-    v(0.5em) // Consistent space below heading
-
-    // Display the list as a simple comma-separated string
-    // Indent this list slightly for visual grouping under the heading
+    text(weight: "bold", size: 12pt)[#title]
+    v(0.5em)
     pad(left: 1.5em)[#text(size: 10pt)[#data.familiar_with_list.join(", ")]]
   }
-
 } // End main format function

@@ -2,48 +2,43 @@
 
 # No top-level introduction needed if we structure it well below.
 
-[[favorite_languages]]
+[[primary_languages]]
 name = "Rust"
-description = "Primary language for performance, memory safety, correctness, and systems-level tasks. Enjoy its strong typing and compile-time guarantees."
+description = "My preference for any projects that benefit from static typing, robust error handling, and memory safety."
 examples = [
-  { text = "CLI utilities for enhancing LLM workflows via context injection." },
-  { text = "Library enforcing scientific invariants directly within Rust's type system (compile-time checks)." },
-  { text = "Asynchronous firmware for embedded environmental sensors.", link = "optional-link-to-repo-or-blog-post" }, # Example Link
-  { text = "High-performance biological model compute backends (native & WebAssembly)." },
+  { text = "Floco: a library to enforce user-defined constraints on arbitrarily-sized floats, directly within Rust's type system. [Link]", link = "https://crates.io/crates/floco"},
+  { text = "Dirgrab: CLI utility for injecting entire local projects into LLM context windows. [Link]", link = "https://crates.io/crates/dirgrab"},
+  { text = "Asynchronous firmware for embedded environmental sensors (e.g. with embassy)." },
+  { text = "High-performance backends for scientific models." }
 ]
 
-[[favorite_languages]]
+[[primary_languages]]
 name = "Python"
 description = "Go-to for prototypes, quick scripts, data analysis, and AI/ML ecosystem."
 examples = [
-  { text = "Automated image processing pipelines for biological samples." },
-  { text = "Data manipulation and analysis workflows (Pandas, NumPy)." },
-  { text = "Quick development of utility scripts for research tasks." },
-]
+  { text = "Retrieval-Augmented Generation (RAG) utility script for linking your local Zotero library to LLMs. [Link]", link = "https://github.com/RileyLeff/tryllm/blob/main/use_assistant.py"},
+  { text = "Zotero Expander Script: Add all citations from a paper to your library. [Link]", link = "https://github.com/RileyLeff/tryllm/blob/main/expand_citations.py"},
 
+]
 
 [[other_languages]]
 name = "R"
-description = "Used mainly for specific ecological modeling packages, ggplot2 visualization, and collaboration within the biological sciences."
+description = "Used mainly for domain-specific packages, ggplot2, and collaboration within the biological sciences."
 examples = [
-  { text = "Published package wrapping a stomatal optimization model (primarily for collaborative use)." },
+  { text = "Wrapper package to call a stomatal optimization model from R. [Link]", link = "https://github.com/RileyLeff/ezSperry-beta"},
 ]
 
 [[other_languages]]
 name = "JavaScript / TypeScript"
-description = "Applied for frontend web development and specific research automation/visualization needs."
+description = "Mostly for frontend web development (e.g. Svelte) but occasionally useful in research/academic contexts."
 examples = [
-  { text = "Developed an educational 3D multiplayer game visualizing plant physiology concepts (Three.js).", link = "optional-link-to-game-or-repo" }, # Example Link
-  { text = "Created ImageJ macro automating leaf area quantification." },
+  { text = "Developed an educational 3D multiplayer game to communicate plant physiology concepts to students. [Link]", link = "forestroyale.rileyleff.com" }, # Example Link
+  { text = "RiLeaf.ijm: ImageJ macro automating leaf area quantification. [Link]", link = "https://gist.github.com/RileyLeff/0bd4062dcbe4a6e5aa39489a7edd9edc" }
 ]
 
-# List of other familiar technologies
-familiar_with_title = "Familiar With"
-familiar_with_list = [
-  "C++ (Embedded, performance extensions - now prefer Rust)",
-  "SQL (Data manipulation)",
-  "Java (Specific large-scale bioinformatics tools)",
-  "Swift (macOS/iOS GPU compute via Metal)",
-  "OpenCL",
-  "ArcGIS"
+[[other_languages]]
+name = "Typst"
+description = "To generate pretty and reproducible documents."
+examples = [
+  { text = "This CV! Check out this repo for an example of how to generate a CV from structured data and formatter components. [Link]", link = "https://github.com/rileyleff/rileycv" }
 ]

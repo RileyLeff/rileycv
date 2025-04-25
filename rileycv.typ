@@ -32,7 +32,7 @@
     is_list: true
   ),
   ( // Computing Skills / Profile - UPDATED ENTRY
-    title: "Computational Profile & Projects", // More descriptive title
+    title: "Software Development", // More descriptive title
     data_file: "data/computing.toml",
     data_format: "toml",
     data_key: none, // Process whole file
