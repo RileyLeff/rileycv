@@ -1,0 +1,20 @@
+# .pre-commit-config.yaml
+repos:
+-   repo: local
+    hooks:
+    -   id: typst-compile-cv
+        name: Compile CV and Stage PDF
+        # Point entry to the shell script
+        entry: scripts/compile_and_stage.sh
+        # Use 'script' for local executable scripts, not 'system'
+        language: script
+        # Hook should run whenever relevant source files change
+        files: \.(typ|toml)$
+        # Don't pass filenames to our script
+        pass_filenames: false
+        # Ensures the hook runs if matching files are staged
+        # (might not strictly be needed with 'files' but doesn't hurt)
+        always_run: true
+        # Run during the pre-commit stage
+        stages: [pre-commit]
+        # 'require_serial: true' is likely not needed with this setup

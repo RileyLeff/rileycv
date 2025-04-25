@@ -6,9 +6,9 @@
 name = "Rust"
 description = "My preference for any projects that benefit from static typing, robust error handling, and memory safety."
 examples = [
-  { text = "Floco: a library to enforce user-defined constraints on arbitrarily-sized floats, directly within Rust's type system. [Link]", link = "https://crates.io/crates/floco"},
+  { text = "Floco: a library to enforce user-defined constraints on arbitrarily-sized floats directly within Rust's type system. [Link]", link = "https://crates.io/crates/floco"},
   { text = "Dirgrab: CLI utility for injecting entire local projects into LLM context windows. [Link]", link = "https://crates.io/crates/dirgrab"},
-  { text = "Asynchronous firmware for embedded environmental sensors (e.g. with embassy)." },
+  { text = "SDI-12: Implementation of a legacy serial standard for communication with embedded environmental sensors for embedded environmental sensors. [Link]", link = "https://github.com/RileyLeff/sdi12"},
   { text = "High-performance backends for scientific models." }
 ]
 
@@ -25,14 +25,14 @@ examples = [
 name = "R"
 description = "Used mainly for domain-specific packages, ggplot2, and collaboration within the biological sciences."
 examples = [
-  { text = "Wrapper package to call a stomatal optimization model from R. [Link]", link = "https://github.com/RileyLeff/ezSperry-beta"},
+  { text = "ezSperry: Wrapper package to call a stomatal optimization model from R. [Link]", link = "https://github.com/RileyLeff/ezSperry-beta"},
 ]
 
 [[other_languages]]
 name = "JavaScript / TypeScript"
 description = "Primarily used for frontend web development (e.g. Svelte) but occasionally useful in research/academic contexts."
 examples = [
-  { text = "Developed an educational 3D multiplayer game to communicate plant physiology concepts to students. [Link]", link = "forestroyale.rileyleff.com" }, # Example Link
+  { text = "Forest Royale: a educational 3D multiplayer game to communicate plant physiology concepts to students. [Link]", link = "forestroyale.rileyleff.com" }, # Example Link
   { text = "RiLeaf.ijm: ImageJ macro automating leaf area quantification. [Link]", link = "https://gist.github.com/RileyLeff/0bd4062dcbe4a6e5aa39489a7edd9edc" }
 ]
 
