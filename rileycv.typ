@@ -63,6 +63,14 @@
     formatter_file: "formatters/presentations.typ",
     is_list: false // Process the whole file data at once
   ),
+   ( // Teaching Section - NEW ENTRY
+    title: "Teaching",
+    data_file: "data/teaching.toml",
+    data_format: "toml",
+    data_key: "entry", // We want to process each item in the 'entry' array
+    formatter_file: "formatters/teaching.typ",
+    is_list: true // The formatter handles one entry at a time
+  )
 )
 
 // --- Data Loading Helper ---
