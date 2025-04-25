@@ -14,7 +14,7 @@ examples = [
 
 [[favorite_languages]]
 name = "Python"
-description = "Go-to for rapid scripting, automation, data analysis, and visualization tasks."
+description = "Go-to for prototypes, quick scripts, data analysis, and AI/ML ecosystem."
 examples = [
   { text = "Automated image processing pipelines for biological samples." },
   { text = "Data manipulation and analysis workflows (Pandas, NumPy)." },
