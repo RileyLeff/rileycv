@@ -1,0 +1,91 @@
+# data/presentations.toml
+
+[[talks]]
+title = "Tree Mortality In Response To Seawater Inundation"
+event = "George Washington University Seminar Series"
+date = "2023"
+link = "" # Optional link field, leave empty or add URL
+
+[[talks]]
+title = "Predicting Tree Function and Mortality in a Changing Tropical Environment"
+event = "American Geophysical Union Fall Meeting" # Shortened for consistency
+date = "2020"
+link = "" # Replace with actual link if available
+
+[[talks]]
+title = "Microbial Diversity and Function in the Phyllosphere"
+event = "University of Chicago Honors Research Symposium" # Expanded for clarity
+date = "2019"
+link = ""
+
+[[posters]]
+title = "Foliar Water Uptake Keeps Dying Trees Alive In A Coastal Forest" # Replace 'x'
+event = "VCR LTER All-Hands Meeting"
+date = "2024"
+link = ""
+
+[[posters]]
+title = "Reverse sap flow in coastal forest in response to saltwater flooding"
+event = "New Phytologist Next-Gen Scientists"
+date = "2024"
+link = ""
+
+[[posters]]
+title = "Sap Flux: Updates From 3 Years Of Monitoring Across The Delmarva"
+event = "Critical Zone Network Meeting" # Assuming CZN implies the meeting
+date = "2024"
+link = ""
+
+[[posters]]
+title = "Hydraulic Stress Limits Pinus taeda Range In A Mid-Atlantic Coastal Forest" # Needs a title
+event = "SALT Conference"
+date = "2024"
+link = ""
+
+[[posters]]
+title = "Sap Flux: Updates After 3 Years Of Monitoring Across The Delmarva" # Replace 'x'
+event = "Critical Zone Network All-Hands Meeting"
+date = "2024"
+link = ""
+
+[[posters]]
+title = "Seawater Inundation Impacts On Pine Hydraulic Regime" # Replace 'x'
+event = "Delaware Wetlands Conference"
+date = "2024"
+link = ""
+
+[[posters]]
+title = "A Novel Quantitative Method To Improve Sap Flux Measurements"
+event = "George Washington University Harlan Symposium"
+date = "2023"
+link = ""
+
+[[posters]]
+title = "Wireless Sensor Networks For Automated Field Data Collection"
+event = "VCR LTER All-Hands Meeting & Critical Zone Network Meeting"
+date = "2023"
+link = ""
+
+[[posters]]
+title = "Seawater Intrusion Disrupts Sap Flux Dynamics In A Coastal Forest"
+event = "George Washington University Harlan Symposium"
+date = "2022"
+link = ""
+
+[[posters]]
+title = "Seawater Inundation Induces Reverse Sap Flux In Coastal Forest"
+event = "Virginia Coastal Reserve LTER NSF Mid-Term Review" # Shortened slightly
+date = "2022"
+link = ""
+
+[[posters]]
+title = "Predicting Tree Function and Mortality in a Changing Tropical Environment"
+event = "American Geophysical Union Fall Meeting" # Shortened for consistency
+date = "2020"
+link = "" # Replace with actual link if available
+
+[[posters]]
+title = "Microbial Diversity and Function in the Phyllosphere"
+event = "University of Chicago Honors Research Symposium" # Expanded for clarity
+date = "2019"
+link = ""

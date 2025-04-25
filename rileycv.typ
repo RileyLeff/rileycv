@@ -55,6 +55,14 @@
     formatter_file: "formatters/publications.typ", // Points to the new formatter
     is_list: false // Process the whole file data at once
   ),
+  ( // Presentations Section - NEW ENTRY
+    title: "Presentations",
+    data_file: "data/presentations.toml",
+    data_format: "toml",
+    data_key: none, // Formatter handles the whole object (talks and posters)
+    formatter_file: "formatters/presentations.typ",
+    is_list: false // Process the whole file data at once
+  ),
 )
 
 // --- Data Loading Helper ---

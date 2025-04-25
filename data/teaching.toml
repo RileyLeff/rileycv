@@ -1,0 +1,55 @@
+# data/teaching.toml
+
+[[entry]]
+role = "Instructor"
+course = "Intro To Python (Summer Seminar Series)"
+institution = "George Washington University"
+date = "2023"
+
+[[entry]]
+role = "Instructor"
+course = "Intro To R (Summer Seminar Series)"
+institution = "George Washington University"
+date = "2023"
+
+[[entry]]
+role = "Instructor"
+course = "Intro To Ecology (Summer Seminar Series)"
+institution = "George Washington University"
+date = "2022"
+
+[[entry]]
+role = "Teaching Assistant"
+course = "Conservation Biology"
+institution = "George Washington University"
+date = "2022"
+
+[[entry]]
+role = "Lab Instructor"
+course = "Introductory Microbiology"
+institution = "George Washington University"
+date = "2021"
+
+[[entry]]
+role = "Interim Instructor (7th Grade)"
+course = "" # No specific course mentioned, role is descriptive
+institution = "Twin Rivers Charter Academy, Yuba City, CA" # Added location for clarity
+date = "2020"
+
+[[entry]]
+role = "Lab Instructor"
+course = "Core Biology"
+institution = "University of Chicago"
+date = "2017 - 2019"
+
+[[entry]]
+role = "Instructor / Mentor" # Role clarified
+course = "Neighborhood Schools Program (5th Grade)" # Program as course
+institution = "University of Chicago Outreach, Chicago, IL" # Clarified context
+date = "2016 - 2017"
+
+[[entry]]
+role = "Corps Member / Tutor" # Role clarified
+course = "Jumpstart (Pre-K Literacy)" # Program as course, added detail
+institution = "University of Chicago Community Service Center, Chicago, IL" # Clarified context
+date = "2015 - 2016"
