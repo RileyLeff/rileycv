@@ -5,8 +5,18 @@ student_name = "Sehrin Hossain"
 level = "Undergraduate" # Assumed, confirm
 affiliation = "George Washington University" # Placeholder
 start_year = "2025" # Placeholder
+end_year = "Present"
 project_description = "Automated image segementation pipeline to analyze wood traits" # Placeholder
 outcome = "Won Luther Rice Fellowship." # Optional
+
+[[entry]]
+student_name = "Ellyn Kinkel"
+level = "Undergraduate" # Assumed, confirm
+affiliation = "George Washington University" # Placeholder
+start_year = "2024" # Placeholde
+end_year = "Present"
+project_description = "Analyzing non-structural carbohydrate storage in salt-stressed coastal forests." # Placeholder
+outcome = "Won Harlan Undergraduate Fellowship." # Optional
 
 [[entry]]
 student_name = "Kaeden Rippon"
@@ -15,14 +25,6 @@ affiliation = "University Of Viriginia" # Inferred
 start_year = "2024" # Placeholder
 project_description = "Detected foliar water uptake in pine saplings." # Placeholder
 outcome = "Won VCR LTER REU Funding." # Optional
-
-[[entry]]
-student_name = "Ellyn Kinkel"
-level = "Undergraduate" # Assumed, confirm
-affiliation = "George Washington University" # Placeholder
-start_year = "2024" # Placeholde
-project_description = "Analyzing non-structural carbohydrate storage in salt-stressed coastal forests." # Placeholder
-outcome = "Won Harlan Undergraduate Fellowship." # Optional
 
 [[entry]]
 student_name = "Noa Shapiro-Tamir"
@@ -65,7 +67,7 @@ affiliation = "Tri Cities, WA" # Placeholder
 start_year = "2019" # Placeholder
 end_year = "" # Optional
 funding_award = "" # Optional
-project_description = "[Describe Project]" # Placeholder
+project_description = "Processed samples for non-structural carbohydrate analysis." # Placeholder
 outcome = "" # Optional
 
 [[entry]]
@@ -75,5 +77,5 @@ affiliation = "Tri Cities, WA" # Placeholder
 start_year = "2019" # Placeholder
 end_year = "" # Optional
 funding_award = "" # Optional
-project_description = "[Describe Project]" # Placeholder
+project_description = "Processed samples for non-structural carbohydrate analysis." # Placeholder
 outcome = "" # Optional
