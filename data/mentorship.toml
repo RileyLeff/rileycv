@@ -7,7 +7,7 @@ affiliation = "UC Davis" # Placeholder
 start_year = "2025" # Placeholder
 end_year = "Present"
 project_description = "Measurement and analysis of pressure-volume curves across salinity gradients" # Placeholder
-outcome = "Won Luther Rice Fellowship." # Optional
+outcome = "Won VCR LTER REU Funding." # Optional
 
 [[entry]]
 student_name = "Sehrin Hossain"
