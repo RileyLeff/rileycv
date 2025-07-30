@@ -1,6 +1,15 @@
 # data/mentorship.toml
 
 [[entry]]
+student_name = "Shay Cihlar"
+level = "Undergraduate" # Assumed, confirm
+affiliation = "UC Davis" # Placeholder
+start_year = "2025" # Placeholder
+end_year = "Present"
+project_description = "Measurement and analysis of pressure-volume curves across salinity gradients" # Placeholder
+outcome = "Won Luther Rice Fellowship." # Optional
+
+[[entry]]
 student_name = "Sehrin Hossain"
 level = "Undergraduate" # Assumed, confirm
 affiliation = "George Washington University" # Placeholder
