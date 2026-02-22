@@ -2,12 +2,12 @@
 
 [[entry]]
 student_name = "Shay Cihlar"
-level = "Undergraduate" # Assumed, confirm
-affiliation = "UC Davis" # Placeholder
-start_year = "2025" # Placeholder
-end_year = "Present"
-project_description = "Measurement and analysis of pressure-volume curves across salinity gradients" # Placeholder
-outcome = "Won VCR LTER REU Funding." # Optional
+level = "Undergraduate"
+affiliation = "UC Davis"
+start_year = "2025"
+end_year = "2025"
+project_description = "Measurement and analysis of pressure-volume curves across salinity gradients"
+outcome = "Presented his work at two research symposia."
 
 [[entry]]
 student_name = "Sehrin Hossain"
@@ -16,7 +16,7 @@ affiliation = "George Washington University" # Placeholder
 start_year = "2025" # Placeholder
 end_year = "Present"
 project_description = "Automated image segementation pipeline to analyze wood traits" # Placeholder
-outcome = "Won Luther Rice Fellowship." # Optional
+outcome = "Won Luther Rice Fellowship, presented her work as a poster at a research symposium." # Optional
 
 [[entry]]
 student_name = "Ellyn Kinkel"
@@ -25,7 +25,7 @@ affiliation = "George Washington University" # Placeholder
 start_year = "2024" # Placeholde
 end_year = "Present"
 project_description = "Analyzing non-structural carbohydrate storage in salt-stressed coastal forests." # Placeholder
-outcome = "Won Harlan Undergraduate Fellowship." # Optional
+outcome = "Won Harlan Undergraduate Fellowship, presented her work as a poster at a research symposium." # Optional
 
 [[entry]]
 student_name = "Kaeden Rippon"
@@ -33,7 +33,7 @@ level = "Undergraduate" # Inferred
 affiliation = "University Of Viriginia" # Inferred
 start_year = "2024" # Placeholder
 project_description = "Detected foliar water uptake in pine saplings." # Placeholder
-outcome = "Won VCR LTER REU Funding." # Optional
+outcome = "Presented his work as a talk at a research symposium." # Optional
 
 [[entry]]
 student_name = "Noa Shapiro-Tamir"
@@ -41,7 +41,7 @@ level = "REU Student" # Inferred
 affiliation = "Oberlin College" # Inferred
 start_year = "2023" # Placeholder
 project_description = "Measured leaf decomposition rates across a salinity gradient."
-outcome = "Won VCR LTER REU Funding."
+outcome = "Presented her work as a talk at a research symposium."
 
 [[entry]]
 student_name = "Maggie Connolly"
@@ -49,7 +49,7 @@ level = "Undergraduate"
 affiliation = "George Washington University"
 start_year = "2022"
 project_description = "Studying plant hydraulic responses to elevated salinity."
-outcome = "Won Harlan Undergraduate Fellowship."
+outcome = "Presented her work as a talk and poster at a research symposium."
 
 [[entry]]
 student_name = "Aaron Mendez"
@@ -58,16 +58,16 @@ affiliation = "GWU School Without Walls"
 start_year = "2022"
 funding_award = "" # Optional
 project_description = "Analyzing non-structural carbohydrate levels in Phragmites Australis for AP Research project."
-outcome = "SUNY!" # Optional
+outcome = "Presented his work, now a student at SUNY." # Optional
 
 [[entry]]
 student_name = "Aidan Brown"
-level = "Undergraduate Researcher"
+level = "Master's Student (former undergraduate mentee)"
 affiliation = "George Washington University"
 start_year = "2022"
-end_year = "Present" # Or specific end year if applicable
+end_year = "2025"
 project_description = "Training deep learning model to detect and analyze tree canopy structures from drone images."
-outcome = "Won GWU Harlan Fellowship, Critical Zone Network Fellowship (2x), Accepted to GWU 5-Year BS/MS Program In Biology." # Optional
+outcome = "Won GWU Harlan Fellowship, Critical Zone Network Fellowship (2x), Accepted to GWU 5-Year BS/MS Program In Biology."
 
 [[entry]]
 student_name = "James Abend"

@@ -1,6 +1,11 @@
 # data/awards.toml
 
 [[entry]]
+name = "Organismal Systems Research Exchange Grant"
+organization = "University of Oxford"
+dates = "2025"
+
+[[entry]]
 name = "NSF Graduate Research Fellowship"
 organization = "National Science Foundation" # Added
 dates = "April 2023"

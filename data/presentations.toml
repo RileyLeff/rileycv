@@ -1,6 +1,18 @@
 # data/presentations.toml
 
 [[talks]]
+title = "What Scientists Need To Know About AI"
+event = "GWU Biology Department Seminar"
+date = "2025"
+link = ""
+
+[[talks]]
+title = "Foliar Water Uptake Keeps Dying Trees Alive"
+event = "Ecological Society of America Annual Meeting"
+date = "2025"
+link = ""
+
+[[talks]]
 title = "Tree Mortality In Response To Seawater Inundation"
 event = "George Washington University Seminar Series"
 date = "2023"

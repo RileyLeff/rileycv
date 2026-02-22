@@ -5,20 +5,24 @@
 [[primary_languages]]
 name = "Rust"
 description = "My preference for any projects that benefit from static typing, robust error handling, and memory safety."
+short_description = "Static typing, memory safety, performance-critical applications."
 examples = [
-  { text = "Floco: a library to enforce user-defined constraints on arbitrarily-sized floats directly within Rust's type system. [Link]", link = "https://crates.io/crates/floco"},
-  { text = "Dirgrab: CLI utility for injecting entire local projects into LLM context windows. [Link]", link = "https://crates.io/crates/dirgrab"},
-  { text = "SDI-12: Implementation of a legacy serial standard for communication with embedded environmental sensors for embedded environmental sensors. [Link]", link = "https://github.com/RileyLeff/sdi12"},
-  { text = "High-performance backends for scientific models." }
+  { text = "Floco: a library to enforce user-defined constraints on arbitrarily-sized floats directly within Rust's type system. [Link]", short_text = "Floco: constrained float types", link = "https://crates.io/crates/floco"},
+  { text = "Dirgrab: CLI utility for injecting entire local projects into LLM context windows. [Link]", short_text = "Dirgrab: codebase-to-LLM tool", link = "https://crates.io/crates/dirgrab"},
+  { text = "riley_cms: Minimal self-hosted headless CMS using Git as the content database. [Link]", short_text = "riley_cms: Git-based headless CMS", link = "https://github.com/RileyLeff/riley_cms"},
+  { text = "licor: Type-safe parser for LI-COR 6800 data with Python and R bindings. [Link]", short_text = "licor: LI-COR 6800 data parser", link = "https://github.com/RileyLeff/licor"},
+  { text = "SDI-12: Implementation of a legacy serial standard for communication with embedded environmental sensors. [Link]", short_text = "SDI-12: sensor communication protocol", link = "https://github.com/RileyLeff/sdi12"},
+  { text = "High-performance backends for scientific models.", short_text = "Scientific model backends" }
 ]
 
 [[primary_languages]]
 name = "Python"
 description = "Go-to for prototypes, quick scripts, data analysis, and AI/ML ecosystem."
+short_description = "Prototyping, data analysis, AI/ML."
 examples = [
-  { text = "Retrieval-Augmented Generation (RAG) utility script for linking your local Zotero library to LLMs. [Link]", link = "https://github.com/RileyLeff/tryllm/blob/main/use_assistant.py"},
-  { text = "Zotero Expander Script: Add all citations from a paper to your library. [Link]", link = "https://github.com/RileyLeff/tryllm/blob/main/expand_citations.py"},
-
+  { text = "rileyviewer: Browser-based plot viewer for matplotlib/seaborn, inspired by R's httpgd. [Link]", short_text = "rileyviewer: browser-based plot viewer", link = "https://github.com/RileyLeff/rileyviewer"},
+  { text = "Retrieval-Augmented Generation (RAG) utility script for linking your local Zotero library to LLMs. [Link]", short_text = "RAG utility for Zotero + LLMs", link = "https://github.com/RileyLeff/tryllm/blob/main/use_assistant.py"},
+  { text = "Zotero Expander Script: Add all citations from a paper to your library. [Link]", short_text = "Zotero citation expander", link = "https://github.com/RileyLeff/tryllm/blob/main/expand_citations.py"},
 ]
 
 [[other_languages]]
@@ -32,7 +36,9 @@ examples = [
 name = "JavaScript / TypeScript"
 description = "Primarily used for frontend web development (e.g. Svelte) but occasionally useful in research/academic contexts."
 examples = [
-  { text = "Forest Royale: a educational 3D multiplayer game to communicate plant physiology concepts to students. [Link]", link = "forestroyale.rileyleff.com" }, # Example Link
+  { text = "Forest Royale: an educational 3D multiplayer game to communicate plant physiology concepts to students. [Link]", link = "https://forestroyale.rileyleff.com" },
+  { text = "annopurr: WebGPU image annotation tool for scientific measurements with TIFF support. [Link]", link = "https://github.com/RileyLeff/annopurr" },
+  { text = "rileaf2: PWA for measuring leaf area from images, designed for field use with the LI-COR 6800. [Link]", link = "https://github.com/RileyLeff/rileaf2" },
   { text = "RiLeaf.ijm: ImageJ macro automating leaf area quantification. [Link]", link = "https://gist.github.com/RileyLeff/0bd4062dcbe4a6e5aa39489a7edd9edc" }
 ]
 
