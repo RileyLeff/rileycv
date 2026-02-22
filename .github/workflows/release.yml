@@ -1,0 +1,44 @@
+name: Release CV
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create or update latest release
+        run: |
+          # Delete existing latest release if it exists
+          gh release delete latest --yes 2>/dev/null || true
+          git push origin :refs/tags/latest 2>/dev/null || true
+
+          # Create new release with PDF and all TOML data files
+          gh release create latest \
+            --title "Latest CV" \
+            --notes "Auto-updated on push to main" \
+            --latest \
+            rileycv.pdf \
+            data/education.toml \
+            data/computing.toml \
+            data/awards.toml \
+            data/publications.toml \
+            data/presentations.toml \
+            data/teaching.toml \
+            data/outreach.toml \
+            data/mentorship.toml
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Trigger website update
+        run: |
+          gh api repos/rileyleff/website/dispatches \
+            -f event_type=cv-update
+        env:
+          GH_TOKEN: ${{ secrets.WEBSITE_DISPATCH_TOKEN }}
