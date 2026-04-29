@@ -1,6 +1,12 @@
 # data/presentations.toml
 
 [[talks]]
+title = "What Do The Trees Know?"
+event = "George Mason University Computational Social Sciences Seminar"
+date = "2026"
+link = ""
+
+[[talks]]
 title = "What Scientists Need To Know About AI"
 event = "GWU Biology Department Seminar"
 date = "2025"
