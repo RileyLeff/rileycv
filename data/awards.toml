@@ -1,6 +1,11 @@
 # data/awards.toml
 
 [[entry]]
+name = "Dean's Dissertation Completion Fellowship"
+organization = "GWU"
+dates = "2026"
+
+[[entry]]
 name = "Organismal Systems Research Exchange Grant"
 organization = "University of Oxford"
 dates = "2025"
@@ -13,7 +18,7 @@ dates = "April 2023"
 [[entry]]
 name = "Harlan Graduate Research Fellowship"
 organization = "GWU Biology" # Assumed based on PhD context - CHANGE IF NEEDED
-dates = "April 2021, 2022, 2024"
+dates = "April 2021, 2022, 2024, 2026"
 
 [[entry]]
 name = "Irish Endowment Fund"
