@@ -2,6 +2,18 @@
 
 [[entry]]
 role = "Instructor"
+course = "Setting Up Your Dev Machine For The Agent Era (Seminar)"
+institution = "UVA Coastal Research Center"
+date = "2026"
+
+[[entry]]
+role = "Teaching Assistant"
+course = "Conservation Biology"
+institution = "George Washington University"
+date = "2026"
+
+[[entry]]
+role = "Instructor"
 course = "Intro To Python (Summer Seminar Series)"
 institution = "George Washington University"
 date = "2023"
