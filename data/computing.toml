@@ -6,11 +6,11 @@
 name = "Rust"
 short_description = "Static typing, memory safety, performance-critical applications."
 examples = [
-  { text = "myco: a declarative programming language for scientific models — e-graph compiler, NumPy/JAX backends, Python bindings. [Link]", short_text = "myco: language for scientific models", link = "https://github.com/RileyLeff/myco"},
-  { text = "ozzydb: provenance database for scientific data with typed artifacts and versioned transforms; Rust server, CLI, web frontend, and Python client. [Link]", short_text = "ozzydb: scientific data provenance DB", link = "https://github.com/RileyLeff/ozzydb"},
-  { text = "sdi12: no_std implementation of the SDI-12 protocol for embedded environmental sensors, with firmware for RP2040, STM32, and ESP32 targets. [Link]", short_text = "sdi12: embedded sensor protocol", link = "https://github.com/RileyLeff/sdi12"},
+  { text = "myco: a declarative, acausal programming language for scientific models — e-graph compiler, NumPy/JAX backends, Python bindings. [Link]", short_text = "myco: language for scientific models", link = "https://github.com/RileyLeff/myco"},
+  { text = "ozzydb: version control for scientific data, built on immutable, content-addressed artifacts and versioned transforms; Rust server, CLI, web frontend, and Python client. [Link]", short_text = "ozzydb: version control for scientific data", link = "https://github.com/RileyLeff/ozzydb"},
+  { text = "sdi12: no_std implementation of the SDI-12 protocol for embedded environmental sensors — the core runs anywhere with a GPIO, with firmware adapters for RP2040, STM32, and ESP32. [Link]", short_text = "sdi12: embedded sensor protocol", link = "https://github.com/RileyLeff/sdi12"},
   { text = "riley_auth: OAuth2/OIDC identity provider with PKCE, refresh-token rotation and reuse detection, and JWKS key rotation. [Link]", short_text = "riley_auth: OAuth2/OIDC provider", link = "https://github.com/RileyLeff/riley_auth"},
-  { text = "Floco: a library to enforce user-defined constraints on arbitrarily-sized floats directly within Rust's type system. [Link]", short_text = "Floco: constrained float types", link = "https://crates.io/crates/floco"},
+  { text = "Floco: a library to enforce user-defined constraints on arbitrarily-sized floats directly within Rust's type system; an early inspiration for myco. [Link]", short_text = "Floco: constrained float types", link = "https://crates.io/crates/floco"},
   { text = "Dirgrab: CLI utility for injecting entire local projects into LLM context windows. [Link]", short_text = "Dirgrab: codebase-to-LLM tool", link = "https://crates.io/crates/dirgrab"},
   { text = "licor: Type-safe parser for LI-COR 6800 data with Python and R bindings. [Link]", short_text = "licor: LI-COR 6800 data parser", link = "https://github.com/RileyLeff/licor"},
 ]

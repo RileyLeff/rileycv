@@ -55,24 +55,10 @@
 // Main format function for the whole computing section data
 #let format(data) = {
 
-  // --- Favorite Languages Section ---
-  if "primary_languages" in data and data.primary_languages.len() > 0 {
-    text(weight: "bold", size: 12pt)[Primary Languages]
-    v(0.5em) // Space below heading
-    for lang_entry in data.primary_languages {
-      pad(left: 1.5em, { format_language_entry(lang_entry) })
-    }
-    // Removed extra v() here - rely on block(below:...)
-  }
-
-  // --- Other Languages Section ---
-  if "other_languages" in data and data.other_languages.len() > 0 {
-    text(weight: "bold", size: 12pt)[Other Languages]
-    v(0.5em) // Space below heading
-    for lang_entry in data.other_languages {
-      pad(left: 1.5em, { format_language_entry(lang_entry) })
-    }
-    // Removed extra v() here - rely on block(below:...)
+  // --- Languages (flat, ordered; primacy is encoded by order) ---
+  let languages = data.at("primary_languages", default: ()) + data.at("other_languages", default: ())
+  for lang_entry in languages {
+    format_language_entry(lang_entry)
   }
 
   // --- Familiar With Section ---
