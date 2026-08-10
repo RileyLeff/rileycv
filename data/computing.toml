@@ -4,37 +4,33 @@
 
 [[primary_languages]]
 name = "Rust"
-description = "My preference for any projects that benefit from static typing, robust error handling, and memory safety."
 short_description = "Static typing, memory safety, performance-critical applications."
 examples = [
+  { text = "myco: a declarative programming language for scientific models — e-graph compiler, NumPy/JAX backends, Python bindings. [Link]", short_text = "myco: language for scientific models", link = "https://github.com/RileyLeff/myco"},
+  { text = "ozzydb: provenance database for scientific data with typed artifacts and versioned transforms; Rust server, CLI, web frontend, and Python client. [Link]", short_text = "ozzydb: scientific data provenance DB", link = "https://github.com/RileyLeff/ozzydb"},
+  { text = "sdi12: no_std implementation of the SDI-12 protocol for embedded environmental sensors, with firmware for RP2040, STM32, and ESP32 targets. [Link]", short_text = "sdi12: embedded sensor protocol", link = "https://github.com/RileyLeff/sdi12"},
+  { text = "riley_auth: OAuth2/OIDC identity provider with PKCE, refresh-token rotation and reuse detection, and JWKS key rotation. [Link]", short_text = "riley_auth: OAuth2/OIDC provider", link = "https://github.com/RileyLeff/riley_auth"},
   { text = "Floco: a library to enforce user-defined constraints on arbitrarily-sized floats directly within Rust's type system. [Link]", short_text = "Floco: constrained float types", link = "https://crates.io/crates/floco"},
   { text = "Dirgrab: CLI utility for injecting entire local projects into LLM context windows. [Link]", short_text = "Dirgrab: codebase-to-LLM tool", link = "https://crates.io/crates/dirgrab"},
-  { text = "riley_cms: Minimal self-hosted headless CMS using Git as the content database. [Link]", short_text = "riley_cms: Git-based headless CMS", link = "https://github.com/RileyLeff/riley_cms"},
   { text = "licor: Type-safe parser for LI-COR 6800 data with Python and R bindings. [Link]", short_text = "licor: LI-COR 6800 data parser", link = "https://github.com/RileyLeff/licor"},
-  { text = "SDI-12: Implementation of a legacy serial standard for communication with embedded environmental sensors. [Link]", short_text = "SDI-12: sensor communication protocol", link = "https://github.com/RileyLeff/sdi12"},
-  { text = "High-performance backends for scientific models.", short_text = "Scientific model backends" }
 ]
 
 [[primary_languages]]
 name = "Python"
-description = "Go-to for prototypes, quick scripts, data analysis, and AI/ML ecosystem."
 short_description = "Prototyping, data analysis, AI/ML."
 examples = [
+  { text = "quadrat: causal ecosystem simulator for benchmarking ecological reasoning in LLM agents, with Docker-sandboxed agent evaluation. Code available on request.", short_text = "quadrat: LLM ecology reasoning benchmark"},
   { text = "rileyviewer: Browser-based plot viewer for matplotlib/seaborn, inspired by R's httpgd. [Link]", short_text = "rileyviewer: browser-based plot viewer", link = "https://github.com/RileyLeff/rileyviewer"},
-  { text = "Retrieval-Augmented Generation (RAG) utility script for linking your local Zotero library to LLMs. [Link]", short_text = "RAG utility for Zotero + LLMs", link = "https://github.com/RileyLeff/tryllm/blob/main/use_assistant.py"},
-  { text = "Zotero Expander Script: Add all citations from a paper to your library. [Link]", short_text = "Zotero citation expander", link = "https://github.com/RileyLeff/tryllm/blob/main/expand_citations.py"},
 ]
 
 [[other_languages]]
 name = "R"
-description = "Used mainly for domain-specific packages, ggplot2, and collaboration within the biological sciences."
 examples = [
   { text = "ezSperry: Wrapper package to call a stomatal optimization model from R. [Link]", link = "https://github.com/RileyLeff/ezSperry-beta"},
 ]
 
 [[other_languages]]
 name = "JavaScript / TypeScript"
-description = "Primarily used for frontend web development (e.g. Svelte) but occasionally useful in research/academic contexts."
 examples = [
   { text = "Forest Royale: an educational 3D multiplayer game to communicate plant physiology concepts to students. [Link]", link = "https://forestroyale.rileyleff.com" },
   { text = "annopurr: WebGPU image annotation tool for scientific measurements with TIFF support. [Link]", link = "https://github.com/RileyLeff/annopurr" },
@@ -44,7 +40,6 @@ examples = [
 
 [[other_languages]]
 name = "Typst"
-description = "To generate pretty and reproducible documents."
 examples = [
   { text = "This CV! Follow the link for an example of how to generate a CV from structured data and formatter components. [Link]", link = "https://github.com/rileyleff/rileycv" }
 ]
