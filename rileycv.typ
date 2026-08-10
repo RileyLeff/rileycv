@@ -32,12 +32,20 @@
     is_list: true
   ),
   ( // Computing Skills / Profile - UPDATED ENTRY
-    title: "Software Development", // More descriptive title
+    title: "Software",
     data_file: "data/computing.toml",
     data_format: "toml",
     data_key: none, // Process whole file
     formatter_file: "formatters/computing.typ", // Point to the new formatter
     is_list: false // Not a list of items
+  ),
+  (
+    title: "Hardware",
+    data_file: "data/hardware.toml",
+    data_format: "toml",
+    data_key: "entry",
+    formatter_file: "formatters/hardware.typ",
+    is_list: true
   ),
   ( // Awards Section - NEW ENTRY
     title: "Awards",

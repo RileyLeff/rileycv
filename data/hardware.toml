@@ -1,0 +1,9 @@
+# data/hardware.toml
+
+[[entry]]
+text = "Sap flux logic board: open hardware for experimental heat-pulse sap flux sensors, built for a new method that solves for thermal parameters and probe positions conventional workflows assume; prototypes fabricated 2026. [Link]"
+link = "https://github.com/RileyLeff/sapflux_sensor"
+
+[[entry]]
+text = "SDI-12 converter board: interface hardware (designed in atopile) connecting SDI-12 environmental sensors to any microcontroller with a GPIO. [Link]"
+link = "https://github.com/RileyLeff/sdi12"
