@@ -1,6 +1,14 @@
 # data/mentorship.toml
 
 [[entry]]
+student_name = "Acadia Conboy"
+level = "Undergraduate"
+affiliation = "James Madison University"
+start_year = "2026"
+project_description = "Detailed photosynthetic characterization of Phragmites australis across a salinity gradient."
+outcome = "Presented her work at two research symposia."
+
+[[entry]]
 student_name = "Shay Cihlar"
 level = "Undergraduate"
 affiliation = "UC Davis"
