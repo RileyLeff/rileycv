@@ -134,7 +134,7 @@
   ],
   [
     #set align(right)
-    #image("assets/rileypic.png", width: 35%)
+    #image("assets/riley_sticker.png", width: 1.1in)
   ]
 )
 
