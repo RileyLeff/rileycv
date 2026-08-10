@@ -131,12 +131,13 @@
 
       #set text(weight: "regular", size: 11pt)
       #grid(
-        columns: (auto, auto, auto),
+        columns: (auto, auto, auto, auto),
         column-gutter: 0.8em,
         align: bottom,
         [Washington, DC],
         [#link("https://scholar.google.com/citations?user=h02IDTwAAAAJ&hl=en&oi=ao")[Google Scholar]],
         [rileyleff\@gmail.com],
+        [#link("https://rileyleff.com")[rileyleff.com]],
       )
     ]
   ],
