@@ -7,3 +7,6 @@ link = "https://github.com/RileyLeff/sapflux_sensor"
 [[entry]]
 text = "SDI-12 converter board: interface hardware (designed in atopile) connecting SDI-12 environmental sensors to any microcontroller with a GPIO. [Link]"
 link = "https://github.com/RileyLeff/sdi12"
+
+[[entry]]
+text = "LI-6800 leaf clip: calibrated, 3D-printed leaf clip with a fiducial locator constellation and a companion offline phone app for in-chamber leaf area measurement."
