@@ -55,12 +55,6 @@ date = "2024"
 link = ""
 
 [[posters]]
-title = "Sap Flux: Updates From 3 Years Of Monitoring Across The Delmarva"
-event = "Critical Zone Network Meeting" # Assuming CZN implies the meeting
-date = "2024"
-link = ""
-
-[[posters]]
 title = "Hydraulic Stress Limits Pinus taeda Range In A Mid-Atlantic Coastal Forest" # Needs a title
 event = "SALT Conference"
 date = "2024"

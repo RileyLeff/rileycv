@@ -23,7 +23,7 @@ level = "Undergraduate" # Assumed, confirm
 affiliation = "George Washington University" # Placeholder
 start_year = "2025" # Placeholder
 end_year = "Present"
-project_description = "Automated image segementation pipeline to analyze wood traits" # Placeholder
+project_description = "Automated image segmentation pipeline to analyze wood traits" # Placeholder
 outcome = "Won Luther Rice Fellowship, presented her work as a poster at a research symposium." # Optional
 
 [[entry]]
@@ -38,7 +38,7 @@ outcome = "Won Harlan Undergraduate Fellowship, presented her work as a poster a
 [[entry]]
 student_name = "Kaeden Rippon"
 level = "Undergraduate" # Inferred
-affiliation = "University Of Viriginia" # Inferred
+affiliation = "University of Virginia" # Inferred
 start_year = "2024" # Placeholder
 project_description = "Detected foliar water uptake in pine saplings." # Placeholder
 outcome = "Presented his work as a talk at a research symposium." # Optional
@@ -65,7 +65,7 @@ level = "High School Student"
 affiliation = "GWU School Without Walls"
 start_year = "2022"
 funding_award = "" # Optional
-project_description = "Analyzing non-structural carbohydrate levels in Phragmites Australis for AP Research project."
+project_description = "Analyzing non-structural carbohydrate levels in Phragmites australis for AP Research project."
 outcome = "Presented his work, now a student at SUNY." # Optional
 
 [[entry]]
