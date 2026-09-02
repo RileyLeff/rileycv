@@ -27,6 +27,7 @@ jobs:
             rileycv.pdf \
             data/education.toml \
             data/computing.toml \
+            data/hardware.toml \
             data/awards.toml \
             data/publications.toml \
             data/presentations.toml \
