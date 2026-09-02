@@ -1,6 +1,16 @@
 # data/awards.toml
 
 [[entry]]
+name = "Hidden Science Competition Winner"
+organization = "Astera Institute"
+dates = "2026"
+# Optional: substrings of `name` to render as hyperlinks (PDF and website).
+links = [
+  { text = "Hidden Science Competition", url = "https://astera.org/hidden-science-competition/" },
+  { text = "Winner", url = "https://rileyleff.com/blog/forcing-plants-to-participate" },
+]
+
+[[entry]]
 name = "Dean's Dissertation Completion Fellowship"
 organization = "GWU"
 dates = "2026"
