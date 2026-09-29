@@ -1,6 +1,11 @@
 # data/awards.toml
 
 [[entry]]
+name = "Claude Campus Ambassador"
+organization = "Anthropic"
+dates = "2026"
+
+[[entry]]
 name = "Hidden Science Competition Winner"
 organization = "Astera Institute"
 dates = "2026"
