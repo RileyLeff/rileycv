@@ -1,39 +1,36 @@
 # data/computing.toml
+# Software, grouped by what it is for. Each example names its language.
+# `[Link]` in `text` marks where the link goes.
 
-# No top-level introduction needed if we structure it well below.
+languages = "Rust, Python, R, TypeScript"
 
-[[primary_languages]]
-name = "Rust"
-short_description = "Static typing, memory safety, performance-critical applications."
+[[group]]
+name = "Measurement & Field Infrastructure"
 examples = [
-  { text = "myco: a declarative, acausal programming language for scientific models. [Link]", short_text = "myco: language for scientific models", link = "https://github.com/RileyLeff/myco"},
-  { text = "ozzydb: a purely functional approach to version control for scientific data. [Link]", short_text = "ozzydb: version control for scientific data", link = "https://github.com/RileyLeff/ozzydb"},
-  { text = "sdi12: no_std implementation of the SDI-12 protocol for embedded environmental sensors. The core runs anywhere with a GPIO, with adapters for RP2040, STM32, and ESP32. [Link]", short_text = "sdi12: embedded sensor protocol", link = "https://github.com/RileyLeff/sdi12"},
-  { text = "riley web services: self-hosted suite powering rileyleff.com, including riley_auth (accounts and sign-in), riley_cms (Git-as-database content management), riley_leaderboards (versioned rankings with live updates), and riley_comments. [Link]", short_text = "riley web services: self-hosted suite", link = "https://rileyleff.com"},
-  { text = "Floco: a library to enforce user-defined constraints on arbitrarily-sized floats directly within Rust's type system; an early inspiration for myco. [Link]", short_text = "Floco: constrained float types", link = "https://crates.io/crates/floco"},
-  { text = "Dirgrab: CLI utility for injecting entire local projects into LLM context windows. [Link]", short_text = "Dirgrab: codebase-to-LLM tool", link = "https://crates.io/crates/dirgrab"},
-  { text = "licor: Type-safe parser for LI-COR 6800 data with Python and R bindings. [Link]", short_text = "licor: LI-COR 6800 data parser", link = "https://github.com/RileyLeff/licor"},
+  { text = "heatpulse-decompression: finite-pulse heat transport model for heat-pulse sap flux, with Bayesian inference on matched Metal and CUDA GPU kernels (Python). Code available on request." },
+  { text = "sdi12: no_std implementation of the SDI-12 protocol for embedded environmental sensors. The core runs anywhere with a GPIO, with adapters for RP2040, STM32, and ESP32 (Rust). [Link]", link = "https://github.com/RileyLeff/sdi12" },
+  { text = "licor: type-safe parser for LI-COR 6800 data with Python and R bindings (Rust). [Link]", link = "https://github.com/RileyLeff/licor" },
+  { text = "rileaf2: PWA for measuring leaf area from images, designed for field use with the LI-COR 6800 (TypeScript). [Link]", link = "https://github.com/RileyLeff/rileaf2" },
+  { text = "annopurr: WebGPU image annotation tool for scientific measurements with TIFF support (TypeScript). [Link]", link = "https://github.com/RileyLeff/annopurr" },
 ]
 
-[[primary_languages]]
-name = "Python"
-short_description = "Prototyping, data analysis, AI/ML."
+[[group]]
+name = "Scientific Models & Data"
 examples = [
-  { text = "quadrat: causal ecosystem simulator for benchmarking ecological reasoning in LLM agents, with Docker-sandboxed agent evaluation. Code available on request.", short_text = "quadrat: LLM ecology reasoning benchmark"},
-  { text = "rileyviewer: Browser-based plot viewer for matplotlib/seaborn, inspired by R's httpgd. [Link]", short_text = "rileyviewer: browser-based plot viewer", link = "https://github.com/RileyLeff/rileyviewer"},
+  { text = "myco: a declarative, acausal programming language for scientific models (Rust). [Link]", link = "https://github.com/RileyLeff/myco" },
+  { text = "ozzydb: a purely functional approach to version control for scientific data (Rust). [Link]", link = "https://github.com/RileyLeff/ozzydb" },
+  { text = "ezSperry: interface to Sperry's stomatal optimization model (R). [Link]", link = "https://github.com/RileyLeff/ezSperry-beta" },
 ]
 
-[[other_languages]]
-name = "R"
+[[group]]
+name = "AI & Research Computing"
 examples = [
-  { text = "ezSperry: Wrapper package to call a stomatal optimization model from R. [Link]", link = "https://github.com/RileyLeff/ezSperry-beta"},
+  { text = "quadrat: causal ecosystem simulator for benchmarking ecological reasoning in LLM agents, with Docker-sandboxed agent evaluation (Python). Code available on request." },
+  { text = "gwu-hpc-mcp: lets AI agents use GWU's Pegasus cluster through the researcher's own authenticated connection, with 2FA kept in the researcher's hands (Rust). [Link]", link = "https://github.com/RileyLeff/gwu-hpc-mcp" },
 ]
 
-[[other_languages]]
-name = "JavaScript / TypeScript"
+[[group]]
+name = "Web"
 examples = [
-  { text = "Forest Royale: an educational 3D multiplayer game to communicate plant physiology concepts to students. [Link]", link = "https://forestroyale.rileyleff.com" },
-  { text = "annopurr: WebGPU image annotation tool for scientific measurements with TIFF support. [Link]", link = "https://github.com/RileyLeff/annopurr" },
-  { text = "rileaf2: PWA for measuring leaf area from images, designed for field use with the LI-COR 6800. [Link]", link = "https://github.com/RileyLeff/rileaf2" },
-  { text = "RiLeaf.ijm: ImageJ macro automating leaf area quantification. [Link]", link = "https://gist.github.com/RileyLeff/0bd4062dcbe4a6e5aa39489a7edd9edc" }
+  { text = "riley web services: self-hosted suite powering rileyleff.com: accounts and sign-in, Git-backed content management, leaderboards, and comments (Rust). [Link]", link = "https://rileyleff.com" },
 ]

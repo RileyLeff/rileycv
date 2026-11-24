@@ -1,7 +1,7 @@
 // formatters/computing.typ
-// Formats the computing skills section with structured language categories and indentation.
+// Formats the Software section: a languages line, then groups of examples.
 
-// Helper function to format a single language entry (name, description, examples)
+// Formats one group (name, optional description, examples)
 #let format_language_entry(lang_entry) = {
   // Increase spacing below the entire block if needed (e.g., to 1.0em)
   block(below: 1.0em, { // Increased from 0.8em to 1.0em
@@ -52,23 +52,13 @@
 }
 
 
-// Main format function for the whole computing section data
+// Main format function: a languages line, then one block per group.
 #let format(data) = {
-
-  // --- Languages (flat, ordered; primacy is encoded by order) ---
-  let languages = data.at("primary_languages", default: ()) + data.at("other_languages", default: ())
-  for lang_entry in languages {
-    format_language_entry(lang_entry)
+  let langs = data.at("languages", default: "")
+  if langs != "" {
+    block(below: 1.0em, text(size: 10pt)[*Languages:* #langs])
   }
-
-  // --- Familiar With Section ---
-  if "familiar_with_list" in data and data.familiar_with_list.len() > 0 {
-    let title = data.at("familiar_with_title", default: "Familiar With")
-    text(weight: "bold", size: 12pt)[#title] // Consistent heading style
-    v(0.5em) // Consistent space below heading
-    pad(left: 1.5em)[#text(size: 10pt)[#data.familiar_with_list.join(", ")]]
-    // Add final spacing if needed after this last section
-    v(0.5em)
+  for group in data.at("group", default: ()) {
+    format_language_entry(group)
   }
-
-} // End main format function
+}
