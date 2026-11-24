@@ -1,9 +1,19 @@
 // formatters/leadership.typ
-// "Leadership, Service & Mentorship": leadership roles first, then the
-// mentees under a "Mentorship" subheading. Receives
-// (leadership: <leadership.toml>, mentorship: <mentorship.toml>).
+// "Leadership, Service & Mentorship", in three subsections: Leadership,
+// Service & Outreach, and Mentorship. Receives
+// (leadership: <leadership.toml>, outreach: <outreach.toml>,
+//  mentorship: <mentorship.toml>).
 
 #import "mentorship.typ": format as format_mentee
+#import "outreach.typ": format as format_outreach
+
+#let subsection(title, entries, format_entry) = {
+  if entries.len() == 0 { return }
+  v(0.5em)
+  text(weight: "bold", size: 12pt)[#title]
+  v(0.4em)
+  pad(left: 1.5em, { for entry in entries { format_entry(entry) } })
+}
 
 #let format_role(entry) = {
   block(below: 1.0em, {
@@ -28,19 +38,7 @@
 }
 
 #let format(data) = {
-  for entry in data.leadership.at("entry", default: ()) {
-    format_role(entry)
-  }
-
-  let mentees = data.mentorship.at("entry", default: ())
-  if mentees.len() > 0 {
-    v(0.5em)
-    text(weight: "bold", size: 12pt)[Mentorship]
-    v(0.4em)
-    pad(left: 1.5em, {
-      for entry in mentees {
-        format_mentee(entry)
-      }
-    })
-  }
+  subsection("Leadership", data.leadership.at("entry", default: ()), format_role)
+  subsection("Service & Outreach", data.outreach.at("entry", default: ()), format_outreach)
+  subsection("Mentorship", data.mentorship.at("entry", default: ()), format_mentee)
 }

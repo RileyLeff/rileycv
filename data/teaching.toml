@@ -53,15 +53,3 @@ role = "Lab Instructor"
 course = "Core Biology"
 institution = "University of Chicago"
 date = "2017 - 2019"
-
-[[entry]]
-role = "Instructor / Mentor" # Role clarified
-course = "Neighborhood Schools Program (5th Grade)" # Program as course
-institution = "University of Chicago Outreach, Chicago, IL" # Clarified context
-date = "2016 - 2017"
-
-[[entry]]
-role = "Corps Member / Tutor" # Role clarified
-course = "Jumpstart (Pre-K Literacy)" # Program as course, added detail
-institution = "University of Chicago Community Service Center, Chicago, IL" # Clarified context
-date = "2015 - 2016"

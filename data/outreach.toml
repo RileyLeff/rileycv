@@ -1,32 +1,40 @@
 # data/outreach.toml
-
-[[entry]]
-title = "Reverse sap flow in coastal forest in response to saltwater flooding"
-event_or_description = "Presentation at GWU Earth Day Symposium" # Clarified type
-date = "2024"
-details = "" # Optional details field
-
-[[entry]]
-title = "What Do The Trees Know?"
-event_or_description = "Activity at Virginia Coastal Reserve LTER 'Day In The Lab'" # Expanded event name
-date = "2024"
-details = ""
-
-[[entry]]
-title = "Trees As Strategists"
-event_or_description = "Presentation at GWU Earth Day Symposium" # Clarified type
-date = "2025"
-details = ""
-
-[[entry]]
-title = "Trees As Strategists"
-event_or_description = "Activity at GWU Biology Graduate Student Council Science Fair" # Expanded event name
-date = "2025"
-details = ""
+# Service & outreach. Rendered under "Leadership, Service & Mentorship".
+# Newest first.
 
 [[entry]]
 title = "Forest Royale"
-event_or_description = "Online Educational Game" # Categorized the entry
-date = "2025" # Or specify a launch year if preferred
+event_or_description = "Online Educational Game"
+date = "2025"
 details = "A 3D multiplayer plant physiology strategy game designed to teach students about complex tradeoffs in plant-environment interactions."
-link = "http://forestroyale.rileyleff.com" # Added link from computing section
+link = "http://forestroyale.rileyleff.com"
+
+[[entry]]
+title = "Trees As Strategists"
+event_or_description = "Presentation at GWU Earth Day Symposium; activity at GWU Biology Graduate Student Council Science Fair"
+date = "2025"
+details = ""
+
+[[entry]]
+title = "What Do The Trees Know?"
+event_or_description = "Activity at Virginia Coastal Reserve LTER 'Day In The Lab'"
+date = "2024"
+details = ""
+
+[[entry]]
+title = "Reverse sap flow in coastal forest in response to saltwater flooding"
+event_or_description = "Presentation at GWU Earth Day Symposium"
+date = "2024"
+details = ""
+
+[[entry]]
+title = "Neighborhood Schools Program (5th Grade)"
+event_or_description = "Instructor / Mentor, University of Chicago Outreach, Chicago, IL"
+date = "2016 - 2017"
+details = ""
+
+[[entry]]
+title = "Jumpstart (Pre-K Literacy)"
+event_or_description = "Corps Member / Tutor, University of Chicago Community Service Center, Chicago, IL"
+date = "2015 - 2016"
+details = ""

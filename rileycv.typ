@@ -55,11 +55,12 @@
     formatter_file: "formatters/awards.typ",
     is_list: true
   ),
-  ( // Leadership roles, then mentees under a subheading. `data_files`
+  ( // Leadership, service & outreach, and mentees, each under a subheading. `data_files`
     // loads several files into one dictionary keyed by name.
     title: "Leadership, Service & Mentorship",
     data_files: (
       leadership: "data/leadership.toml",
+      outreach: "data/outreach.toml",
       mentorship: "data/mentorship.toml",
     ),
     data_format: "toml",
@@ -90,14 +91,6 @@
     data_key: "entry", // We want to process each item in the 'entry' array
     formatter_file: "formatters/teaching.typ",
     is_list: true // The formatter handles one entry at a time
-  ),
-  ( // Outreach Section - NEW ENTRY
-    title: "Outreach & Engagement", // Slightly broader title
-    data_file: "data/outreach.toml",
-    data_format: "toml",
-    data_key: "entry", // Process each item in the 'entry' array
-    formatter_file: "formatters/outreach.typ",
-    is_list: true // Formatter handles one entry at a time
   ),
 )
 
