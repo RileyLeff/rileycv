@@ -7,7 +7,7 @@ languages = "Rust, Python, R, TypeScript"
 [[group]]
 name = "Measurement & Field Infrastructure"
 examples = [
-  { text = "heatpulse-decompression: finite-pulse heat transport model for heat-pulse sap flux, with Bayesian inference on matched Metal and CUDA GPU kernels (Python). Code available on request." },
+  { text = "heatpulse-decompression: finite-pulse heat transport model for heat-pulse sap flux, with Bayesian inference on matched Metal and CUDA GPU kernels (Python). [Link]", link = "https://github.com/RileyLeff/heatpulse-decompression" },
   { text = "sdi12: no_std implementation of the SDI-12 protocol for embedded environmental sensors. The core runs anywhere with a GPIO, with adapters for RP2040, STM32, and ESP32 (Rust). [Link]", link = "https://github.com/RileyLeff/sdi12" },
   { text = "licor: type-safe parser for LI-COR 6800 data with Python and R bindings (Rust). [Link]", link = "https://github.com/RileyLeff/licor" },
   { text = "rileaf2: PWA for measuring leaf area from images, designed for field use with the LI-COR 6800 (TypeScript). [Link]", link = "https://github.com/RileyLeff/rileaf2" },
