@@ -1,0 +1,27 @@
+# data/leadership.toml
+# Leadership and service roles. Rendered with mentorship under
+# "Leadership, Service & Mentorship". Newest first.
+
+[[entry]]
+role = "Founder & President"
+organization = "AGI at GWU"
+dates = "2026 – Present"
+details = "Founded a campus hub for AI at GW that collects AI events from across the university and runs its own series; 33 members."
+link = "https://agigwu.com"
+
+[[entry]]
+role = "Claude Campus Ambassador"
+organization = "Anthropic"
+dates = "2026 – Present"
+details = "Selected as GWU's campus ambassador; host workshops every other week."
+
+[[entry]]
+role = "Commissioner (President)"
+organization = "Chicago Basketball League"
+dates = "2018"
+details = "Led the league's 130 members."
+
+[[entry]]
+role = "Board Member"
+organization = "Chicago Basketball League"
+dates = "2015 – 2019"

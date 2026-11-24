@@ -55,6 +55,18 @@
     formatter_file: "formatters/awards.typ",
     is_list: true
   ),
+  ( // Leadership roles, then mentees under a subheading. `data_files`
+    // loads several files into one dictionary keyed by name.
+    title: "Leadership, Service & Mentorship",
+    data_files: (
+      leadership: "data/leadership.toml",
+      mentorship: "data/mentorship.toml",
+    ),
+    data_format: "toml",
+    data_key: none,
+    formatter_file: "formatters/leadership.typ",
+    is_list: false
+  ),
   ( // Publications & Datasets - Make sure this is correct
     title: "Publications & Datasets", // Main heading for the section
     data_file: "data/publications.toml", // Points to the generated TOML
@@ -87,14 +99,6 @@
     formatter_file: "formatters/outreach.typ",
     is_list: true // Formatter handles one entry at a time
   ),
-  ( // Mentorship Section - NEW ENTRY
-    title: "Mentorship",
-    data_file: "data/mentorship.toml",
-    data_format: "toml",
-    data_key: "entry", // Process each item in the 'entry' array
-    formatter_file: "formatters/mentorship.typ",
-    is_list: true // Formatter handles one entry at a time
-  )
 )
 
 // --- Data Loading Helper ---
@@ -161,7 +165,13 @@
   if loader == none {
     panic("Unsupported data format specified: " + section_meta.data_format + " for section '" + section_meta.title + "'.")
   }
-  let raw_data = loader(section_meta.data_file)
+  let raw_data = if "data_files" in section_meta {
+    let loaded = (:)
+    for (name, path) in section_meta.data_files { loaded.insert(name, loader(path)) }
+    loaded
+  } else {
+    loader(section_meta.data_file)
+  }
 
   // --- Define section_data ---
   let section_data = if section_meta.data_key != none {

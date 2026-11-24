@@ -33,7 +33,8 @@ jobs:
             data/presentations.toml \
             data/teaching.toml \
             data/outreach.toml \
-            data/mentorship.toml
+            data/mentorship.toml \
+            data/leadership.toml
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
