@@ -31,22 +31,6 @@
     formatter_file: "formatters/education.typ",
     is_list: true
   ),
-  ( // Computing Skills / Profile - UPDATED ENTRY
-    title: "Software",
-    data_file: "data/computing.toml",
-    data_format: "toml",
-    data_key: none, // Process whole file
-    formatter_file: "formatters/computing.typ", // Point to the new formatter
-    is_list: false // Not a list of items
-  ),
-  (
-    title: "Hardware",
-    data_file: "data/hardware.toml",
-    data_format: "toml",
-    data_key: "entry",
-    formatter_file: "formatters/hardware.typ",
-    is_list: true
-  ),
   ( // Awards Section - NEW ENTRY
     title: "Awards",
     data_file: "data/awards.toml",
@@ -54,19 +38,6 @@
     data_key: "entry",
     formatter_file: "formatters/awards.typ",
     is_list: true
-  ),
-  ( // Leadership, service & outreach, and mentees, each under a subheading. `data_files`
-    // loads several files into one dictionary keyed by name.
-    title: "Leadership, Service & Mentorship",
-    data_files: (
-      leadership: "data/leadership.toml",
-      outreach: "data/outreach.toml",
-      mentorship: "data/mentorship.toml",
-    ),
-    data_format: "toml",
-    data_key: none,
-    formatter_file: "formatters/leadership.typ",
-    is_list: false
   ),
   ( // Publications & Datasets - Make sure this is correct
     title: "Publications & Datasets", // Main heading for the section
@@ -84,7 +55,36 @@
     formatter_file: "formatters/presentations.typ",
     is_list: false // Process the whole file data at once
   ),
-   ( // Teaching Section - NEW ENTRY
+  ( // Computing Skills / Profile - UPDATED ENTRY
+    title: "Software",
+    data_file: "data/computing.toml",
+    data_format: "toml",
+    data_key: none, // Process whole file
+    formatter_file: "formatters/computing.typ", // Point to the new formatter
+    is_list: false // Not a list of items
+  ),
+  (
+    title: "Hardware",
+    data_file: "data/hardware.toml",
+    data_format: "toml",
+    data_key: "entry",
+    formatter_file: "formatters/hardware.typ",
+    is_list: true
+  ),
+  ( // Leadership, service & outreach, and mentees, each under a subheading. `data_files`
+    // loads several files into one dictionary keyed by name.
+    title: "Leadership, Service & Mentorship",
+    data_files: (
+      leadership: "data/leadership.toml",
+      outreach: "data/outreach.toml",
+      mentorship: "data/mentorship.toml",
+    ),
+    data_format: "toml",
+    data_key: none,
+    formatter_file: "formatters/leadership.typ",
+    is_list: false
+  ),
+  ( // Teaching Section - NEW ENTRY
     title: "Teaching",
     data_file: "data/teaching.toml",
     data_format: "toml",
