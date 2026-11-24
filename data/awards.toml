@@ -12,7 +12,7 @@ dates = "2026"
 # Optional: substrings of `name` to render as hyperlinks (PDF and website).
 links = [
   { text = "Hidden Science Competition", url = "https://astera.org/hidden-science-competition/" },
-  { text = "Winner", url = "https://rileyleff.com/blog/forcing-plants-to-participate" },
+  { text = "Winner", url = "https://asterainstitute.substack.com/p/uncovering-hidden-science-results" },
 ]
 
 [[entry]]
